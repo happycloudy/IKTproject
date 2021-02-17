@@ -4,9 +4,9 @@ import Head from 'next/head'
 
 export default  function Header(props) {
     const NavbarStyle = {
-      background: '-moz-linear-gradient(right, rgba(15,76,134,1), #308DE4 100%);', /* FF3.6+ */
-      background: 'linear-gradient(right, rgba(15,76,134,1), #308DE4 100%);', /* W3C */
-      background: '-webkit-linear-gradient(right, rgba(15,76,134,0.8), #308DE4 100%);',
+      background: '-moz-linear-gradient(right, rgba(15,76,134,1), #308DE4 100%)', /* FF3.6+ */
+      background: 'linear-gradient(right, rgba(15,76,134,1), #308DE4 100%)', /* W3C */
+      background: '-webkit-linear-gradient(right, rgba(15,76,134,0.8), #308DE4 100%)',
     }
 
     return (

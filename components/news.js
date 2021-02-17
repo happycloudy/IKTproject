@@ -1,13 +1,81 @@
 import styles from '../styles/Home.module.css'
-import {Container,Jumbotron,Col,Row,Collapse} from 'react-bootstrap'
+import {Container,Jumbotron,Col,Row} from 'react-bootstrap'
+
 export default  function News(props) {
     const jumboStyle ={
         background: 'black',
         color:'white',
     }
-    /*    
+    return(
+    <Jumbotron style={jumboStyle} fluid className="mb-0">
+           <canvas id="c" style={{zIndex:'-1000',position:'absolute'}}/>
+                <Container>
+                    <Row>
+                        <Col>
+                            <Container> 
+                                <img
+                                    src="/news.png"
+                                    width="80%"
+                                    height="50%"
+                                    className="align-top"
+                                    alt="IKT logo"
+                                />
+                                <h2>Новость 1</h2>
+                                <p>Осознание непонимания приходит постепенно<br/>Но непонимания осознания неизлечимо</p>
+                            </Container>
+                        </Col>
+                        <Col >
+                            <Container> 
+                                <img
+                                    src="/news.png"
+                                    width="80%"
+                                    height="50%"
+                                    className="align-top"
+                                    alt="IKT logo"
+                                />
+                                <h2>Новость 2</h2>
+                                <p>Осознание непонимания приходит постепенно<br/>Но непонимания осознания неизлечимо</p>
+                            </Container>
+                        </Col>
+                    </Row>
+                    <Row className="mt-5">
+                        <Col>
+                            <Container> 
+                                <img
+                                    src="/news.png"
+                                    width="80%"
+                                    height="50%"
+                                    className="align-top"
+                                    alt="IKT logo"
+                                />
+                                <h2>Новость 3</h2>
+                                <p>Осознание непонимания приходит постепенно<br/>Но непонимания осознания неизлечимо</p>
+                            </Container>
+                        </Col>
+                        <Col>
+                            <Container> 
+                                <img
+                                    src="/news.png"
+                                    width="80%"
+                                    height="50%"
+                                    className="align-top"
+                                    alt="IKT logo"
+                                />
+                                <h2>Новость 4</h2>
+                                <p>Осознание непонимания приходит постепенно<br/>Но непонимания осознания неизлечимо</p>
+                            </Container>
+                        </Col>
+                    </Row>
+                </Container> 
+    </Jumbotron>
+)}
+
+
+/*
+function MatrixDraw(e){
     // geting canvas by Boujjou Achraf
-    var c = document.getElementById("c");
+    console.log(e.target.getAttribute("id"))
+    var c = e;
     var ctx = c.getContext("2d");
 
     //making the canvas full screen
@@ -56,32 +124,5 @@ export default  function News(props) {
         }
     }
     setInterval(draw, 35);
-
-     <canvas id="c">
-     </canvas>
-    */
-    return(
-    <Jumbotron style={jumboStyle} fluid>
-           
-                <Container>
-                    <Row>
-                        <Col>
-                            
-                        </Col>
-                        <Col >
-                        
-                        </Col>
-                    </Row>
-                    <Row className="mt-5">
-                        <Col>
-                            
-                        </Col>
-                        <Col>
-                            
-                        </Col>
-                    </Row>
-                </Container> 
-            
-
-    </Jumbotron>
-)}
+}
+*/

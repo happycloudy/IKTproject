@@ -1,25 +1,66 @@
-
+import {Container,Jumbotron,Col,Row} from 'react-bootstrap'
 
 export default  function Footer(props) {
     return(
-        <div>
+        <div style={{backgroundColor:'#00b4da'}}>
             <div id="wrap">
                 <section id="main">
-                <h2> Some Text here</h2>
+                    <Container >
+                        <Row>
+                            <Col>
+                                <Container className="mt-5 mb-5" style={{textAlign:'center'}}>
+                                        <h4>
+                                            <a href="/" style={{color:'white'}}>Студентам</a>
+                                        </h4>
+                                        <h4 className="mt-5">
+                                            <a href="/" style={{color:'white'}}>Абитуриентам</a>
+                                        </h4>
+                                        <h4 className="mt-5">
+                                            <a href="/" style={{color:'white'}}>Аспирантам</a>
+                                        </h4>
+                                </Container>
+                            </Col>
+                            <Col>
+                                <Container className="mt-5 mb-5" height="200px" style={{textAlign:'center'}}>
+                                        <h5>
+                                            <a href="/" style={{color:'white'}}>Официальный сайт<br/>РХТУ им. Д.И. Менделеева</a>
+                                        </h5>
+                                        <h5 className="mt-5">
+                                            <a href="/" style={{color:'white'}}>Учебный портал<br/>РХТУ им. Д.И. Менделеева</a>
+                                        </h5>
+                                        <h5 className="mt-5">
+                                            <a href="/" style={{color:'white'}}>Факультет Цифровых<br/>Технологий и Химического<br/>Инжениринга</a>
+                                        </h5>
+                                </Container>
+                            </Col>
+                            <Col>
+                                    <Row className="mt-5 mb-5"  height="200px">
+                                        <Col><a href="/"><img src="/vk.png" width="100%" className="d-inline-block align-top" alt="vk"/></a></Col>
+                                        <Col><a href="/"><img src="/instagram.png" width="100%" className="d-inline-block align-top" alt="instagram"/></a></Col>
+                                        <Col><a href="/"><img src="/youtube.png" width="100%" className="d-inline-block align-top" alt="youtube"/></a></Col>
+                                        <Col><a href="/"><img src="/twitter.png" width="100%" className="d-inline-block align-top" alt="twitter"/></a></Col>
+                                    </Row>
+                                    <Row>
+                                    <h5 className="mt-5" style={{color:'white',textAlign:'center'}}>Министерство Образования и науки Российской Федерации</h5>
+                                    </Row>    
+                            </Col>
+                        </Row>
+                        <p style={{color:'white'}}>©Designed & developed by IKT departament & Mikolae Arion & Yury Lemetyuynen</p>
+                    </Container>
                 </section>
                 </div>
 
                 <footer>
                 <div className="main-gradient">
-                    
+                
                 </div>  
                 &nbsp;
+                <div className="dots"/>
+                <div className="fade-top"/>
                 </footer>
 
-                <div className="dots">
-                <div className="fade-top">
-                </div>
-            </div>
+                
+
             <style global jsx>{`
             html {
                 background: #00b4da;
@@ -35,8 +76,8 @@ export default  function Footer(props) {
               }
               
               .main-gradient {
-                background: -moz-linear-gradient(top, #00b4da 0%, #363636 100%); /* FF3.6+ */
-                background: linear-gradient(to bottom, #00b4da 0%,#363636 100%); /* W3C */
+                background: -moz-linear-gradient(top, rgba(15,76,134,1), #308DE4 100%); /* FF3.6+ */
+                background: linear-gradient(to bottom, rgba(15,76,134,1), #308DE4 100%); /* W3C */
               }
               
               /* sticky footer from css-tricks.com */
@@ -53,7 +94,7 @@ export default  function Footer(props) {
                   margin-top: -150px; /* negative value of footer height */
                   height: 150px;
                   clear:both;
-               background: #363636; 
+               background: #308DE4; 
               } 
               
               /* CLEAR FIX*/
@@ -90,7 +131,7 @@ export default  function Footer(props) {
               }
               
               .dots {
-                  height: 250px;
+                  height: 150px;
                   width: 100%;
                   position:absolute;
                   bottom: 0px;
