@@ -15,8 +15,8 @@ export default  function Banner(props) {
     }
     return(
         <div>
-            <Jumbotron style={jumboStyle} fluid className="mb-0 pb-0">
-            <Container>
+            <Jumbotron style={jumboStyle} fluid className="mb-0 pb-5">
+            <Container style={{backgroundColor:'rgba(255,255,255,0.2)', textAlign:'center', borderRadius:'15px'}}>
                 <Row>
                     <Col>
                         <Container>
@@ -36,7 +36,7 @@ export default  function Banner(props) {
                     </Container>
                     </Col>
                 </Row>
-                <Row className="mt-5" style={{backgroundColor:'rgba(255,255,255,0.2)', textAlign:'center', borderRadius:'15px'}}>
+                <Row className="mt-5" >
                     <Col>
                         <h3>Листай вниз</h3>
                     </Col>

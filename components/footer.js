@@ -1,8 +1,14 @@
 import {Container,Jumbotron,Col,Row} from 'react-bootstrap'
 
+const FooterStyle = {
+    background: '-moz-linear-gradient(bottom, rgba(15,76,134,1), #308DE4 100%)', /* FF3.6+ */
+    background: 'linear-gradient(bottom, rgba(15,76,134,1), #308DE4 100%)', /* W3C */
+    background: '-webkit-linear-gradient(bottom, rgba(15,76,134,0.8), #308DE4 100%)',
+}
+
 export default  function Footer(props) {
     return(
-        <div style={{backgroundColor:'#00b4da'}}>
+        <div style={FooterStyle}>
             <div id="wrap">
                 <section id="main">
                     <Container >
@@ -63,7 +69,7 @@ export default  function Footer(props) {
 
             <style global jsx>{`
             html {
-                background: #00b4da;
+                background: rgba(15,76,134,1);
                 color: white;
               }
               
@@ -127,7 +133,7 @@ export default  function Footer(props) {
                 right: 0;
                 height: 50px;
                   
-                background: -webkit-linear-gradient(bottom, rgba(0,180,212,0), #00b4d4);
+                background: -webkit-linear-gradient(bottom, rgba(0,180,212,0), rgba(15,76,134,1));
               }
               
               .dots {
