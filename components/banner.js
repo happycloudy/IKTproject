@@ -36,13 +36,13 @@ export default  function Banner(props) {
                     </Container>
                     </Col>
                 </Row>
-                <Row className="mt-5" >
-                    <Col>
-                        <h3>Листай вниз</h3>
-                    </Col>
-                </Row>
+                
             </Container>
-            
+                <Row className="mt-5" >
+                        <Col>
+                            
+                        </Col>
+                </Row>
             </Jumbotron> 
         </div>
     )

@@ -69,7 +69,7 @@ export default  function Footer(props) {
 
             <style global jsx>{`
             html {
-                background: rgba(15,76,134,1);
+                background: #308DE4;
                 color: white;
               }
               
