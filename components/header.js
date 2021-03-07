@@ -1,5 +1,5 @@
 import {Navbar,Nav} from 'react-bootstrap'
-import Head from 'next/head'
+
 
 
 export default  function Header(props) {
@@ -11,15 +11,10 @@ export default  function Header(props) {
 
     return (
     <div>
-      <Head>
-        <title>Главная</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
 
       <Navbar 
         style={NavbarStyle}
-        expand="lg"
-        onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}>
+        expand="lg">
         
         <Navbar.Brand href="/">
         <img
@@ -36,19 +31,19 @@ export default  function Header(props) {
               <Nav.Link className="text-white" href="/">Главная</Nav.Link>
             </Nav.Item>
             <Nav.Item >
-              <Nav.Link className="text-white" eventKey="link-1">Информация</Nav.Link>
+              <Nav.Link className="text-white" href="/info">Информация</Nav.Link>
             </Nav.Item>
             <Nav.Item >
-              <Nav.Link className="text-white" eventKey="link-1">Наука</Nav.Link>
+              <Nav.Link className="text-white" href="/">Наука</Nav.Link>
             </Nav.Item>
             <Nav.Item >
-              <Nav.Link className="text-white" eventKey="link-1">Учеба</Nav.Link>
+              <Nav.Link className="text-white" href="/">Учеба</Nav.Link>
             </Nav.Item>
             <Nav.Item >
-              <Nav.Link className="text-white" eventKey="link-1">Преподаватели</Nav.Link>
+              <Nav.Link className="text-white" href="/">Преподаватели</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link className="text-white" eventKey="link-2">О кафедре</Nav.Link>
+              <Nav.Link className="text-white" href="/">О кафедре</Nav.Link>
             </Nav.Item>
           </Navbar.Collapse>
       </Navbar>
