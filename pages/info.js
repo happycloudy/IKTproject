@@ -1,7 +1,7 @@
 import Header from '../components/header'
 import Footer from '../components/footer'
 import Head from 'next/head'
-
+import Information from '../components/_info'
 export default function Info() {
   return (
     <div>
@@ -10,7 +10,7 @@ export default function Info() {
         <link rel="icon" href="/favicon.ico" />
         </Head>
       <Header/>
-
+      <Information/>
       <Footer/>
     </div>
   )
