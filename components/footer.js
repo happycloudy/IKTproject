@@ -41,10 +41,10 @@ export default  function Footer(props) {
                             </Col>
                             <Col>
                                     <Row className="mt-5 mb-5"  height="200px">
-                                        <Col><a href="/"><img src="/vk.png" width="100%" className="d-inline-block align-top" alt="vk"/></a></Col>
-                                        <Col><a href="/"><img src="/instagram.png" width="100%" className="d-inline-block align-top" alt="instagram"/></a></Col>
-                                        <Col><a href="/"><img src="/youtube.png" width="100%" className="d-inline-block align-top" alt="youtube"/></a></Col>
-                                        <Col><a href="/"><img src="/twitter.png" width="100%" className="d-inline-block align-top" alt="twitter"/></a></Col>
+                                        <Col><a href="https://vk.com/ikt_muctr"><img src="/vk.png" width="100%" className="align-top" alt="vk"/></a></Col>
+                                        <Col><a href="https://www.instagram.com/ikt_muctr/"><img src="/instagram.png" width="100%" className="align-top" alt="instagram"/></a></Col>
+                                        <Col><a href="https://www.youtube.com/channel/UCalhcWufdy2LZ8-_TQR6ZJQ"><img src="/youtube.png" width="100%" className="align-top" alt="youtube"/></a></Col>
+                                        <Col><a href="https://twitter.com/dmuctr"><img src="/twitter.png" width="100%" className="align-top" alt="twitter"/></a></Col>
                                     </Row>
                                     <Row>
                                     <h5 className="mt-5" style={{color:'white',textAlign:'center'}}>Министерство Образования и науки Российской Федерации</h5>
