@@ -1,0 +1,42 @@
+@import '../node_modules/bootstrap/scss/_functions.scss';
+@import "../node_modules/bootstrap/scss/_variables.scss";
+@import "../node_modules/bootstrap/scss/mixins/_breakpoints.scss";
+
+
+.myh1{
+  font-size:2rem;
+}
+.myh2{
+  font-size:1.9rem;
+}
+  
+  @include media-breakpoint-up(sm) {
+    html {
+      font-size: 1.2rem;
+    }
+    .myh1{
+      font-size: 1rem;
+    }
+    .myh2{
+      font-size:0.9rem;
+    }
+  }
+  
+  @include media-breakpoint-up(md) {
+
+    .myh1{
+      font-size: 1.5rem;
+    }
+    .myh2{
+      font-size:1.4rem;
+    }
+  }
+  
+  @include media-breakpoint-up(lg) {
+    .myh1{
+      font-size: 3rem;
+    }
+    .myh2{
+      font-size:2rem;
+    }
+  }

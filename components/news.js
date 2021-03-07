@@ -3,12 +3,18 @@ import {Container,Jumbotron,Col,Row} from 'react-bootstrap'
 import React from 'react'
 
 const jumboStyle ={
-    background: 'rgba(0,0,0,0)',
+    background: '#308DE4',
     color:'white',
 }
 
+const containerStyle ={
+    background: 'rgba(255,255,255,0.2)',
+    textAlign:'center', 
+    borderRadius:'15px',
+}
+
 export default class News extends React.Component {
-    constructor(props){
+    /*constructor(props){
         super(props)
         this.getMatrix = this.getMatrix.bind(this); 
     }
@@ -23,7 +29,7 @@ export default class News extends React.Component {
         c.height = window.innerHeight /2;
         c.width = window.innerWidth;
 
-        let matrix = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%+-/~{[|`]}";
+        let matrix = "fuck";
 
         matrix = matrix.split("");
 
@@ -53,13 +59,15 @@ export default class News extends React.Component {
         }
         setInterval(draw, 35);
     }
+    <canvas id="c" style={{position:'absolute',background:'black',width:'100%',height:'100%'}}/>*/
 
 render(){
     return(
     <div style={{position: 'relative'}}>
-    <canvas id="c" style={{position:'absolute',background:'black',width:'100%',height:'100%'}}/>
+    
     <Jumbotron style={jumboStyle} fluid className="mb-0 mt-0 pt-3 pb-3">
-                <Container>
+                <Container className="pb-3 pt-3" style={containerStyle}>
+                    <h1 className="mb-3" style={{color:'white',textAlign:'center'}}>Новости</h1>
                     <Row>
                         <Col>
                             <Container> 

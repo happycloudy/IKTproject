@@ -12,6 +12,7 @@
     "express": "^4.17.1",
     "jquery": "^3.5.1",
     "next": "^10.0.4",
+    "node-sass": "^5.0.0",
     "popper": "^1.0.1",
     "react": "17.0.1",
     "react-bootstrap": "^1.4.0",
