@@ -9,22 +9,20 @@ const ParStyle = {
 
 export default  function MyParallax(props) {
    return(
-       <div style={{background: '#308DE4',position:'relative'}}>
-        <Container  >
+       <div className="pt-5 pb-5" style={{background: '#308DE4',position:'relative'}}>
             <ParallaxProvider className="mt-5 mb-5" >
                 <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure" styleOuter={ParStyle}>
                     <img width="100%"  src="/parallax1.png" />
                 </Parallax>
-                <div className="mt-3"></div>
+                <div className="pt-3 mb-3"></div>
                 <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure" styleOuter={ParStyle}>
                     <img width="100%" src="/parallax2.png" />
                 </Parallax>
-                <div className="mt-3"></div>
+                <div className="pt-3 pb-3"></div>
                 <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure" styleOuter={ParStyle}>
                     <img width="100%" src="/parallax3.png" />
                 </Parallax>
             </ParallaxProvider>
-        </Container>
         </div>
    )
 }

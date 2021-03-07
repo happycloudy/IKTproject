@@ -34,16 +34,16 @@ export default  function Header(props) {
               <Nav.Link className="text-white" href="/info">Информация</Nav.Link>
             </Nav.Item>
             <Nav.Item >
-              <Nav.Link className="text-white" href="/">Наука</Nav.Link>
+              <Nav.Link className="text-white" href="/science">Наука</Nav.Link>
             </Nav.Item>
             <Nav.Item >
-              <Nav.Link className="text-white" href="/">Учеба</Nav.Link>
+              <Nav.Link className="text-white" href="/study">Учеба</Nav.Link>
             </Nav.Item>
             <Nav.Item >
-              <Nav.Link className="text-white" href="/">Преподаватели</Nav.Link>
+              <Nav.Link className="text-white" href="/teachers">Преподаватели</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link className="text-white" href="/">О кафедре</Nav.Link>
+              <Nav.Link className="text-white" href="/about">О кафедре</Nav.Link>
             </Nav.Item>
           </Navbar.Collapse>
       </Navbar>
