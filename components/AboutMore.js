@@ -5,7 +5,7 @@ import AboutCafedral from "../components/about/AboutCafedral";
 const AboutMore = () => {
     const style = {
         backgroundColor: '#308DE4',
-        height: '310vh',
+        paddingBottom: '5vh',
         textAlign: 'center',
         borderRadius: '20px'
     }
@@ -16,7 +16,8 @@ const AboutMore = () => {
                     <h2>Кафедра информационных компьютерных технологий</h2>
                 </Col>
             </Row>
-            <img className='mt-3' src='https://cdnimg.rg.ru/img/content/162/58/91/Depositphotos_68789085_m-2015_d_850.jpg' style={{maxHeight: '20%'}}/>
+            <img className='mt-3' src='https://cdnimg.rg.ru/img/content/162/58/91/Depositphotos_68789085_m-2015_d_850.jpg'
+                 style={{maxHeight: '70%',maxWidth: '70%'}}/>
             <h3 style={{color: 'white'}} className='mt-5'>
                 Мы научим вас
             </h3>
