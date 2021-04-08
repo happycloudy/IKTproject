@@ -1,15 +1,18 @@
-import styles from '../styles/Home.module.css'
+import styles from '../../styles/Home.module.css'
 import {Container,Jumbotron,Col,Row,Collapse} from 'react-bootstrap'
 
 export default  function Banner(props) {
     const jumboStyle ={
         background: '#308DE4',
         color:'white',
+        height: '100%'
     }
 
 
     return(
-        <div>
+        <div style={{
+            height: '100vh'
+        }}>
             <Jumbotron style={jumboStyle} fluid className="mb-0 pb-5">
             <Container style={{backgroundColor:'rgba(255,255,255,0.2)', textAlign:'center', borderRadius:'15px'}}>
                 <Row className="pb-3">

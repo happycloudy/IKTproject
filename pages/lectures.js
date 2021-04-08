@@ -1,9 +1,10 @@
 import Header from '../components/general/header'
 import Footer from '../components/general/footer'
 import Head from 'next/head'
-import Tutors from '../components/Tutors'
 
-export default function Teachers() {
+import StudyInfo from '../components/LecturesList'
+
+export default function Science() {
     const linearTransition = {
         height: '20vh',
         background: '#308DE4 linear-gradient(0deg, rgba(48,141,228,1) 0%, rgba(255,255,255,1) 100%)'
@@ -11,11 +12,11 @@ export default function Teachers() {
     return (
         <div>
             <Head>
-                <title>Преподаватели</title>
+                <title>Лекции и дипломы</title>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
             <Header/>
-            <Tutors/>
+            <StudyInfo/>
             <div style={linearTransition}>
             </div>
             <Footer/>

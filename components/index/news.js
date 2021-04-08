@@ -1,4 +1,4 @@
-import styles from '../styles/Home.module.css'
+import styles from '../../styles/Home.module.css'
 import {Container,Jumbotron,Col,Row} from 'react-bootstrap'
 import React from 'react'
 
