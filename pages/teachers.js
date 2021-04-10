@@ -1,7 +1,7 @@
 import Header from '../components/general/header'
 import Footer from '../components/general/footer'
 import Head from 'next/head'
-import Tutors from '../components/Tutors'
+import Tutors from '../components/teachers/Tutors'
 
 export default function Teachers() {
     const linearTransition = {

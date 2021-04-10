@@ -20,6 +20,10 @@ export default class Home extends Component {
 
 
     render() {
+        const linearTransition = {
+            height: '20vh',
+            background: '#308DE4 linear-gradient(0deg, rgba(48,141,228,1) 0%, rgba(255,255,255,1) 100%)'
+        }
         return (
             <div>
                 <Head>
@@ -52,6 +56,8 @@ export default class Home extends Component {
                     )
                 }
                 <News/>
+                <div style={linearTransition}>
+                </div>
                 <Footer/>
             </div>
         )

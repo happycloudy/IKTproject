@@ -1,4 +1,5 @@
-import {Card, Container, Jumbotron, Col, Row} from 'react-bootstrap'
+import {Card, Container, Col, Row} from 'react-bootstrap'
+import CardFlip from './Card'
 
 export default function Tutors(props) {
     const containerStyle = {
@@ -15,6 +16,8 @@ export default function Tutors(props) {
     return (
         <div>
             <Container>
+                <CardFlip/>
+
                 <Row className="mb-3">
                     <Col>
                         <Container style={containerStyle} className="mt-3 mb-3">

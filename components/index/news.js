@@ -3,12 +3,12 @@ import {Container,Jumbotron,Col,Row} from 'react-bootstrap'
 import React from 'react'
 
 const jumboStyle ={
-    background: '#308DE4',
     color:'white',
+    backgroundColor: '#fff'
 }
 
 const containerStyle ={
-    background: 'rgba(255,255,255,0.2)',
+    background: '#308DE4',
     textAlign:'center', 
     borderRadius:'15px',
 }
