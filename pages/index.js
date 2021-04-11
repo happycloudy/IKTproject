@@ -24,6 +24,10 @@ export default class Home extends Component {
             height: '20vh',
             background: '#308DE4 linear-gradient(0deg, rgba(48,141,228,1) 0%, rgba(255,255,255,1) 100%)'
         }
+        const linearTransitionUp = {
+            height: '10vh',
+            background: '#308DE4 linear-gradient(180deg, rgba(48,141,228,1) 0%, rgba(255,255,255,1) 100%)'
+        }
         return (
             <div>
                 <Head>
@@ -55,6 +59,7 @@ export default class Home extends Component {
                         </Parallax>
                     )
                 }
+                <div style={linearTransitionUp}/>
                 <News/>
                 <div style={linearTransition}>
                 </div>

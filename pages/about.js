@@ -6,7 +6,7 @@ import InfoMore from '../components/AboutMore'
 export default function Teachers() {
     const linearTransition = {
         height: '20vh',
-        background: '#308DE4 linear-gradient(0deg, rgba(48,141,228,1) 0%, rgba(255,255,255,1) 100%)'
+        background: '#308DE4 linear-gradient(0deg, rgba(48,141,228,1) 0%, rgba(255,255,255,1) 95%)'
     }
     const linearTransitionUp = {
         height: '10vh',
