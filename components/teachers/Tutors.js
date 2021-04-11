@@ -16,77 +16,41 @@ export default function Tutors(props) {
     return (
         <div>
             <Container>
-                <CardFlip/>
+
 
                 <Row className="mb-3">
                     <Col>
                         <Container style={containerStyle} className="mt-3 mb-3">
-                            <Card style={cardStyle}>
-                                <Card.Img variant="top" src="/Jensa.png"/>
-                                <Card.Body>
-                                    <Card.Title>Женса А.В.</Card.Title>
-                                    <Card.Text>Доцент</Card.Text>
-                                </Card.Body>
-                            </Card>
+                            <CardFlip/>
                         </Container>
                     </Col>
                     <Col>
                         <Container style={containerStyle} className="mt-3 mb-3">
-                            <Card style={cardStyle}>
-                                <Card.Img variant="top" src="/Jensa.png"/>
-                                <Card.Body>
-                                    <Card.Title>Женса А.В.</Card.Title>
-                                    <Card.Text>Доцент</Card.Text>
-                                </Card.Body>
-                            </Card>
+                            <CardFlip/>
                         </Container>
                     </Col>
                 </Row>
                 <Row>
                     <Col>
                         <Container style={containerStyle} className="mt-3 mb-3">
-                            <Card style={cardStyle}>
-                                <Card.Img variant="top" src="/Jensa.png"/>
-                                <Card.Body>
-                                    <Card.Title>Женса А.В.</Card.Title>
-                                    <Card.Text>Доцент</Card.Text>
-                                </Card.Body>
-                            </Card>
+                            <CardFlip/>
                         </Container>
                     </Col>
                     <Col>
                         <Container style={containerStyle} className="mt-3 mb-3">
-                            <Card style={cardStyle}>
-                                <Card.Img variant="top" src="/Jensa.png"/>
-                                <Card.Body>
-                                    <Card.Title>Женса А.В.</Card.Title>
-                                    <Card.Text>Доцент</Card.Text>
-                                </Card.Body>
-                            </Card>
+                            <CardFlip/>
                         </Container>
                     </Col>
                 </Row>
                 <Row>
                     <Col>
                         <Container style={containerStyle} className="mt-3 mb-3">
-                            <Card style={cardStyle}>
-                                <Card.Img variant="top" src="/Jensa.png"/>
-                                <Card.Body>
-                                    <Card.Title>Женса А.В.</Card.Title>
-                                    <Card.Text>Доцент</Card.Text>
-                                </Card.Body>
-                            </Card>
+                            <CardFlip/>
                         </Container>
                     </Col>
                     <Col>
                         <Container style={containerStyle} className="mt-3 mb-3">
-                            <Card style={cardStyle}>
-                                <Card.Img variant="top" src="/Jensa.png"/>
-                                <Card.Body>
-                                    <Card.Title>Женса А.В.</Card.Title>
-                                    <Card.Text>Доцент</Card.Text>
-                                </Card.Body>
-                            </Card>
+                            <CardFlip/>
                         </Container>
                     </Col>
                 </Row>
@@ -94,3 +58,12 @@ export default function Tutors(props) {
         </div>
     )
 }
+/*<Card style={cardStyle}>
+                                <Card.Img variant="top" src="/Jensa.png"/>
+                                <Card.Body>
+                                    <Card.Title>Женса А.В.</Card.Title>
+                                    <Card.Text>Доцент</Card.Text>
+                                </Card.Body>
+                            </Card>
+
+ */

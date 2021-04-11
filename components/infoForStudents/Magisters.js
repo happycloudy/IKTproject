@@ -5,13 +5,13 @@ const Magisters = () => {
     let color = 'white'
     let BlockStyle = {
         backgroundColor: '#308DE4',
-        height: '30vh',
         textAlign: 'center',
         color: color,
-        borderRadius: '20px'
+        borderRadius: '20px',
+        paddingBottom:'5vh'
     }
     return (
-        <div style={BlockStyle} className='mt-5 pt-2'>
+        <div style={BlockStyle} className='mt-2 pt-2'>
             <Row className='mt-2'>
                 <Col>
                     Магистратура

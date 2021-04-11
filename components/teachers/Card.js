@@ -9,10 +9,10 @@ export default class App extends Component {
         this.state = {
             isFlipped: false
         };
-        this.handleClick = this.handleClick.bind(this);
+        this.handleRotate = this.handleRotate.bind(this);
     }
 
-    handleClick(e) {
+    handleRotate(e) {
         e.preventDefault();
         this.setState(prevState => ({ isFlipped: !prevState.isFlipped }));
     }
@@ -32,7 +32,7 @@ export default class App extends Component {
 
         return (
             <ReactCardFlip isFlipped={this.state.isFlipped} flipDirection="vertical">
-                <div onClick={this.handleClick}>
+                <div onMouseEnter={this.handleRotate}>
                     <Container style={containerStyle} className="mt-3 mb-3">
                         <Card style={cardStyle}>
                             <Card.Img variant="top" src="/Jensa.png"/>
@@ -43,13 +43,16 @@ export default class App extends Component {
                         </Card>
                     </Container>
                 </div>
-                <div onClick={this.handleClick}>
+                <div onMouseLeave={this.handleRotate}>
                     <Container style={containerStyle} className="mt-3 mb-3">
                         <Card style={cardStyle}>
-                            <Card.Img variant="top" src="/Jensa.png"/>
-                            <Card.Body>
-                                <Card.Title>Женса А.В.</Card.Title>
-                                <Card.Text>Доцент</Card.Text>
+                            <Card.Body style={{textAlign: "left"}}>
+                                <Card.Title>Женса Андрей Вячеславович</Card.Title>
+                                <Card.Text><b>Заместитель заведующего кафедрой</b><br/>Окончил: РХТУ им. Д.И.Менделеева<br/>
+                                    Специальность по диплому: Основные процессы химических производств и химическая кибернетика<br/>
+                                    Ученая степень: кандидат технических наук<br/>
+                                    Ученое звание: Доцент<br/>
+                                    Основное место работы: ФГБОУ ВО «Российский химико-технологический университет им. Д.И. Менделеева»</Card.Text>
                             </Card.Body>
                         </Card>
                     </Container>

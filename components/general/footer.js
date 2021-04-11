@@ -16,13 +16,13 @@ export default function Footer(props) {
                             <Col>
                                 <Container className="mt-5 mb-5" style={{textAlign: 'center'}}>
                                     <h4>
-                                        <a href="/" style={{color: 'white'}}>Студентам</a>
+                                        <a href="/infoForStudents" style={{color: 'white'}}>Студентам</a>
                                     </h4>
                                     <h4 className="mt-5">
-                                        <a href="/" style={{color: 'white'}}>Абитуриентам</a>
+                                        <a href="/infoForEntrants" style={{color: 'white'}}>Абитуриентам</a>
                                     </h4>
                                     <h4 className="mt-5">
-                                        <a href="/" style={{color: 'white'}}>Аспирантам</a>
+                                        <a href="/graduate" style={{color: 'white'}}>Аспирантам</a>
                                     </h4>
                                 </Container>
                             </Col>
@@ -73,6 +73,7 @@ export default function Footer(props) {
                 </div>
                 <div className="dots"/>
                 <div className="fade-top"/>
+                <div className="fade-bottom"/>
             </footer>
         </div>
     )

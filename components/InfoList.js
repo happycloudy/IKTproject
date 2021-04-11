@@ -1,7 +1,12 @@
 import React from 'react';
-import {Col, Container} from "react-bootstrap";
-import Students from "./info/student";
-import Aspirants from "./info/aspirants";
+import {Col, Container, Row} from "react-bootstrap";
+import Aspirants from "./graduate/aspirants";
+import Bachelor from "./infoForStudents/Bachelor";
+import Magisters from "./infoForStudents/Magisters";
+import Students from "./infoForStudents/student";
+import Devs from "./science/Devs";
+import ScienceLectures from "./science/ScienceLectures";
+import DiplomsUndergraduate from "./infoForStudents/diplomsUndergraduate";
 
 function InfoList(props) {
     return (
@@ -11,10 +16,29 @@ function InfoList(props) {
                     <h3>Студентам</h3>
                 </Col>
                 <Students/>
-                <Col>
-                    <h3 className='mt-2'>Аспирантам</h3>
+                <Col className='mt-5'>
+                    <h3>Бакалаврам</h3>
                 </Col>
-                <Aspirants/>
+                <Bachelor/>
+                <Col className='mt-5'>
+                    <h3>Магистрам</h3>
+                </Col>
+                <Magisters/>
+                <Col className='mt-5'>
+                    <h3>Темы дипломных работ</h3>
+                </Col>
+                <DiplomsUndergraduate/>
+                <Col className='mt-5'>
+                    <h3>Научная деятельность</h3>
+                </Col>
+                <Col className='mt-5'>
+                    <h4>Разработки</h4>
+                </Col>
+                <Devs/>
+                <Col className='mt-5'>
+                    <h4>Научные лекции и семинары</h4>
+                </Col>
+                <ScienceLectures/>
             </div>
         </Container>
     );

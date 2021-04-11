@@ -8,6 +8,10 @@ export default function Teachers() {
         height: '20vh',
         background: '#308DE4 linear-gradient(0deg, rgba(48,141,228,1) 0%, rgba(255,255,255,1) 100%)'
     }
+    const linearTransitionUp = {
+        height: '10vh',
+        background: '#308DE4 linear-gradient(180deg, rgba(48,141,228,1) 0%, rgba(255,255,255,1) 100%)'
+    }
     return (
         <div>
             <Head>
@@ -15,9 +19,9 @@ export default function Teachers() {
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
             <Header/>
+            <div style={linearTransitionUp}/>
             <Tutors/>
-            <div style={linearTransition}>
-            </div>
+            <div style={linearTransition}/>
             <Footer/>
         </div>
     )

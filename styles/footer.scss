@@ -22,8 +22,8 @@ footer .main-gradient {
 }
 
 .main-gradient {
-  background: -moz-linear-gradient(top, rgba(15, 76, 134, 1), #308DE4 100%); /* FF3.6+ */
-  background: linear-gradient(to bottom, rgba(15, 76, 134, 1), #308DE4 100%); /* W3C */
+  background: -moz-linear-gradient(bottom,rgba(48, 141, 228,1),#308DE4 100% ); /* FF3.6+ */
+  background: linear-gradient(to bottom, rgba(48, 141, 228,1),#308DE4 100%); /* W3C */
 }
 
 /* sticky footer from css-tricks.com */
@@ -90,14 +90,23 @@ footer {
   }
 }
 
+.fade-bottom {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+  height: 50px;
+
+  background: -webkit-linear-gradient(top, rgba(0, 180, 212, 0), rgba(15, 76, 134, 1));
+}
 .fade-top {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  height: 50px;
+  height: 70px;
 
-  background: -webkit-linear-gradient(bottom, rgba(0, 180, 212, 0), rgba(15, 76, 134, 1));
+  background: -webkit-linear-gradient(bottom, rgba(0, 180, 212, 0), rgba(60, 119, 175,1));
 }
 
 .dots {
