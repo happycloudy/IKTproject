@@ -15,20 +15,28 @@ const ModalBachelors = (props) => {
                 </Modal.Header>
                 <Modal.Body>
                     {
-                        props.lectures.map((lecture, ind) => {
+                        props.lectures[0].Lectures.map((lecture, ind) => {
                             return (
                                 <div key={ind}>
                                     <hr/>
                                     <Row>
                                         <Col>
                                             <p>
-                                                {lecture.Description}
+                                                {lecture.description}
                                             </p>
                                         </Col>
                                         <Col >
-                                            <Button href={`http://localhost:1337${props.lectures[0].Lecture[0].url}`}>
-                                                Скачать лекцию
-                                            </Button>
+                                            {
+                                                lecture.lecture.url?
+                                                    <Button href={`http://localhost:1337${lecture.lecture.url}`}>
+                                                        Скачать лекцию
+                                                    </Button>
+                                                    :
+
+                                                    <Button disabled>
+                                                        Лекции нету
+                                                    </Button>
+                                            }
                                         </Col>
                                     </Row>
                                     <hr/>

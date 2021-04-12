@@ -8,12 +8,15 @@ class Bachelor extends React.Component {
         super(props);
         this.state = {
             isBachelorShow: false,
-            lectures : [
+            Lectures: [
                 {
                     Description: '',
-                    Lecture: [
+                    Lectures: [
                         {
-                            url: ''
+                            description: '',
+                            lecture: {
+                                url: ''
+                            }
                         }
                     ]
                 }
@@ -24,17 +27,18 @@ class Bachelor extends React.Component {
     }
 
     componentDidMount() {
-        axios.get('http://localhost:1337/lectures').then(res=> {
+        axios.get('http://localhost:1337/lectures').then(res => {
             this.setState({
                 lectures: res.data
             })
+            console.log(this.state.lectures)
         })
     }
 
-    handleChangeBachelor(){
-       this.setState({
-           isBachelorShow : !this.state.isBachelorShow
-       })
+    handleChangeBachelor() {
+        this.setState({
+            isBachelorShow: !this.state.isBachelorShow
+        })
     }
 
     render() {
@@ -56,16 +60,20 @@ class Bachelor extends React.Component {
                 </Row>
                 <Row className='mt-4'>
                     <Col>
-                        <Button variant='light' onClick={this.handleChangeBachelor}  style={{textDecoration: 'none' }}>Информационные системы и технологии
+                        <Button variant='light' onClick={this.handleChangeBachelor} style={{textDecoration: 'none'}}>Информационные
+                            системы и технологии
                             (КС-10 - КС-40)</Button>
-                        <ModalBachelors show={this.state.isBachelorShow} lectures={this.state.lectures} handleClose={this.handleChangeBachelor}/>
+                        <ModalBachelors show={this.state.isBachelorShow} lectures={this.state.lectures}
+                                        handleClose={this.handleChangeBachelor}/>
                     </Col>
                 </Row>
                 <Row className='mt-2'>
                     <Col>
-                        <Button variant='light' onClick={this.handleChangeBachelor} style={{textDecoration: 'none'}}>Информатика и вычислительная техника
+                        <Button variant='light' onClick={this.handleChangeBachelor} style={{textDecoration: 'none'}}>Информатика
+                            и вычислительная техника
                             (КС-14 - КС-44)</Button>
-                        <ModalBachelors show={this.state.isBachelorShow} lectures={this.state.lectures} handleClose={this.handleChangeBachelor}/>
+                        <ModalBachelors show={this.state.isBachelorShow} lectures={this.state.lectures}
+                                        handleClose={this.handleChangeBachelor}/>
                     </Col>
                 </Row>
             </div>

@@ -8,6 +8,8 @@ const ModalBachelors = (props) => {
     const handleClose = () => setShow(false)
     return (
         <>
+            <ModalBachelorsLectures show={show} lectures={props.lectures}
+                                    handleClose={handleClose}/>
             <Modal show={props.show} onHide={props.handleClose}>
                 <Modal.Header closeButton>
                     <Modal.Title style={{textAlign: 'center'}} >
@@ -28,8 +30,6 @@ const ModalBachelors = (props) => {
                                     Информатика (часть 1) (доц. Женса А.В.)
                                 </p>
                             </Button>
-                            <ModalBachelorsLectures show={show} lectures={props.lectures}
-                                                    handleClose={handleClose}/>
                         </Col>
                     </Row>
                 </Modal.Body>
