@@ -7,12 +7,14 @@ export default  function Banner(props) {
         color:'white',
         height: '100%'
     }
-
+    const imageBannerStyle ={
+        height: '100%',
+        width:'100%',
+        minWidth:'200px'
+    }
 
     return(
-        <div style={{
-            height: '100vh'
-        }}>
+        <div>
             <Jumbotron style={jumboStyle} fluid className="mb-0 pb-5">
             <Container style={{backgroundColor:'rgba(255,255,255,0.2)', textAlign:'center', borderRadius:'15px'}}>
                 <Row className="pb-3 mb-2">
@@ -29,7 +31,7 @@ export default  function Banner(props) {
                         </Container>
                     </Col>
                     <Col className="mt-5">
-                        <img src="/student.png" width="100%" className="d-inline-block align-top" alt="student"/>
+                        <img src="/student.png" style={imageBannerStyle} className="align-center" alt="student"/>
                     </Col>
                 </Row>
             </Container>   

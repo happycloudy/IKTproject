@@ -97,6 +97,7 @@ export default class Home extends Component {
                 </Head>
                 <Header/>
                 <Banner/>
+                <div style={{position:'relative'}}>
                 {
                     this.state.images.map((image,index)=>
                         <Parallax key={index}
@@ -120,6 +121,7 @@ export default class Home extends Component {
                         </Parallax>
                     )
                 }
+                </div>
                 <div style={bodyStyle}>
                     <Particles style={background}
                                params={particleStyle}
