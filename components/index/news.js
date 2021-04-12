@@ -4,7 +4,7 @@ import React from 'react'
 
 const jumboStyle ={
     color:'white',
-    backgroundColor: '#fff'
+    backgroundColor: 'transparent'
 }
 
 const containerStyle ={
