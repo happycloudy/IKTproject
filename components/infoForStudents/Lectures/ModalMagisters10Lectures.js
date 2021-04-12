@@ -2,7 +2,6 @@ import React from 'react';
 import {Button, Col, Modal, Row} from "react-bootstrap";
 
 const ModalBachelors = (props) => {
-    console.log()
     return (
         <>
             <Modal show={props.show} onHide={props.handleClose}>

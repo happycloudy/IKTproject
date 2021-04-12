@@ -2,7 +2,6 @@ import React from 'react';
 import {Button, Col, Modal, Row} from "react-bootstrap";
 
 const ModalBachelors = (props) => {
-    console.log()
     return (
         <>
             <Modal show={props.show} onHide={props.handleClose}>
@@ -15,7 +14,7 @@ const ModalBachelors = (props) => {
                 </Modal.Header>
                 <Modal.Body>
                     {
-                        props.lectures[0].Lectures.map((lecture, ind) => {
+                        props.lectures[2].Lectures.map((lecture, ind) => {
                             return (
                                 <div key={ind}>
                                     <hr/>
@@ -27,7 +26,7 @@ const ModalBachelors = (props) => {
                                         </Col>
                                         <Col >
                                             {
-                                                lecture.lecture.url?
+                                                lecture.lecture?
                                                     <Button href={`http://localhost:1337${lecture.lecture.url}`}>
                                                         Скачать лекцию
                                                     </Button>

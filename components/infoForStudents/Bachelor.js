@@ -29,9 +29,8 @@ class Bachelor extends React.Component {
     componentDidMount() {
         axios.get('http://localhost:1337/lectures').then(res => {
             this.setState({
-                lectures: res.data
+                Lectures: res.data
             })
-            console.log(this.state.lectures)
         })
     }
 
@@ -63,7 +62,7 @@ class Bachelor extends React.Component {
                         <Button variant='light' onClick={this.handleChangeBachelor} style={{textDecoration: 'none'}}>Информационные
                             системы и технологии
                             (КС-10 - КС-40)</Button>
-                        <ModalBachelors show={this.state.isBachelorShow} lectures={this.state.lectures}
+                        <ModalBachelors show={this.state.isBachelorShow} lectures={this.state.Lectures}
                                         handleClose={this.handleChangeBachelor}/>
                     </Col>
                 </Row>
@@ -72,8 +71,8 @@ class Bachelor extends React.Component {
                         <Button variant='light' onClick={this.handleChangeBachelor} style={{textDecoration: 'none'}}>Информатика
                             и вычислительная техника
                             (КС-14 - КС-44)</Button>
-                        <ModalBachelors show={this.state.isBachelorShow} lectures={this.state.lectures}
-                                        handleClose={this.handleChangeBachelor}/>
+                        <ModalBachelors show={this.state.isBachelorShow} lectures={this.state.Lectures}
+                                                                                                  handleClose={this.handleChangeBachelor}/>
                     </Col>
                 </Row>
             </div>
