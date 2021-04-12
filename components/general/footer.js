@@ -29,14 +29,14 @@ export default function Footer(props) {
                             <Col>
                                 <Container className="mt-5 mb-5" height="200px" style={{textAlign: 'center'}}>
                                     <h5>
-                                        <a href="/" style={{color: 'white'}}>Официальный сайт<br/>РХТУ им. Д.И.
+                                        <a href="https://muctr.ru/" style={{color: 'white'}}>Официальный сайт<br/>РХТУ им. Д.И.
                                             Менделеева</a>
                                     </h5>
                                     <h5 className="mt-5">
-                                        <a href="/" style={{color: 'white'}}>Учебный портал<br/>РХТУ им. Д.И. Менделеева</a>
+                                        <a href="https://moodle.muctr.ru/" style={{color: 'white'}}>Учебный портал<br/>РХТУ им. Д.И. Менделеева</a>
                                     </h5>
                                     <h5 className="mt-5">
-                                        <a href="/" style={{color: 'white'}}>Факультет Цифровых<br/>Технологий и
+                                        <a href="https://vk.com/dekanat_itu" style={{color: 'white'}}>Факультет Цифровых<br/>Технологий и
                                             Химического<br/>Инжениринга</a>
                                     </h5>
                                 </Container>
@@ -52,16 +52,18 @@ export default function Footer(props) {
                                                                                              alt="instagram"/></a></Col>
                                     <Col><a href="https://www.youtube.com/channel/UCalhcWufdy2LZ8-_TQR6ZJQ"><img
                                         src="/youtube.png" width="100%" className="align-top" alt="youtube"/></a></Col>
-                                    <Col><a href="https://twitter.com/dmuctr"><img src="/twitter.png" width="100%"
-                                                                                   className="align-top" alt="twitter"/></a></Col>
-                                </Row>
+                                    </Row>
                                 <Row>
-                                    <h5 className="mt-5" style={{color: 'white', textAlign: 'center'}}>Министерство
-                                        Образования и науки Российской Федерации</h5>
+                                    <Col>
+                                    <h5 className="mt-5" style={{color: 'white', textAlign: 'center'}}>
+                                        <a href="https://minobrnauki.gov.ru/" style={{color: 'white'}}>
+                                            Министерство Образования и науки Российской Федерации
+                                        </a></h5>
+                                    </Col>
                                 </Row>
                             </Col>
                         </Row>
-                        <p style={{color: 'white'}}>©Designed & developed by IKT departament & Mikolae Arion & Yury
+                        <p className="mt-2" style={{color: 'white'}}>©Designed & developed by IKT departament & Mikolae Arion & Yury
                             Lemetyuynen</p>
                         <div className='inverted_fade'/>
                     </Container>

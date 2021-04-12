@@ -15,7 +15,7 @@ export default  function Banner(props) {
         }}>
             <Jumbotron style={jumboStyle} fluid className="mb-0 pb-5">
             <Container style={{backgroundColor:'rgba(255,255,255,0.2)', textAlign:'center', borderRadius:'15px'}}>
-                <Row className="pb-3">
+                <Row className="pb-3 mb-2">
                     <Col>
                         <Container>
                         <h1 className="myh1">Хочешь научиться программировать?</h1>
@@ -29,9 +29,7 @@ export default  function Banner(props) {
                         </Container>
                     </Col>
                     <Col className="mt-5">
-                    <Container>
                         <img src="/student.png" width="100%" className="d-inline-block align-top" alt="student"/>
-                    </Container>
                     </Col>
                 </Row>
             </Container>   
