@@ -1,44 +1,41 @@
 import React, {useState} from 'react';
 import {Button, Col, Modal, Row} from "react-bootstrap";
-import ModalMagisters10Lectures from "./ModalMagisters10Lectures";
+import MagistersBlock10 from "./MagistersBlock10";
+
 
 const ModalMagisters10 = (props) => {
-    const [show, setShow] = useState(false)
-    const handleShow = () => setShow(true)
-    const handleClose = () => setShow(false)
+    const semesters = [1, 2, 3, 4]
 
     return (
         <>
-            <ModalMagisters10Lectures show={show} lectures={props.lectures}
-                                      handleClose={handleClose}/>
             <Modal show={props.show} onHide={props.handleClose}>
                 <Modal.Header closeButton>
-                    <Modal.Title style={{textAlign: 'center'}} >
+                    <Modal.Title style={{textAlign: 'center'}}>
                         <h5>
-                            Лекции для магистров МК-10 и <br/>
-                            МК-20
+                            Лекции для МК-10 -> МК-20
                         </h5>
                     </Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <Row>
-                        <Col>
-                            <Button onClick={handleShow}>
-                                <h5>
-                                    1 семестр
-                                </h5>
-                                <p>
-                                    Информатика (часть 1) (доц. Женса А.В.)
-                                </p>
-                            </Button>
-
-                        </Col>
-                    </Row>
+                    {
+                        semesters.map(semester => {
+                            return props.semesters.map(semesterDB => {
+                                if (semesterDB.Semester === semester)
+                                    return (
+                                        <MagistersBlock10 lectures={props.lectures}
+                                                          desc={semesterDB.Description}
+                                                          semester={semester}
+                                                          key={semesterDB.id}
+                                                          teacher={semesterDB.Teacher}
+                                        />
+                                    )
+                            })
+                        })
+                    }
                 </Modal.Body>
             </Modal>
         </>
     );
-
 };
 
 export default ModalMagisters10;

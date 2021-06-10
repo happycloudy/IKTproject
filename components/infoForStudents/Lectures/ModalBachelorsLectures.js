@@ -2,9 +2,18 @@ import React from 'react';
 import {Button, Col, Modal, Row} from "react-bootstrap";
 
 const ModalBachelors = (props) => {
+    const handleClose = ()=>{
+        props.handleCloseLectures()
+        props.handleShowSemesters()
+    }
+
+
     return (
         <>
-            <Modal show={props.show} onHide={props.handleClose}>
+            <Modal show={props.show}
+                   onHide={handleClose}
+                   dialogClassName='modal-100h'
+            >
                 <Modal.Header closeButton>
                     <Modal.Title style={{textAlign: 'center'}}>
                         <h5>
@@ -15,34 +24,41 @@ const ModalBachelors = (props) => {
                 </Modal.Header>
                 <Modal.Body>
                     {
-                        props.lectures[0].Lectures.map((lecture, ind) => {
-                            return (
-                                <div key={ind}>
-                                    <hr/>
-                                    <Row>
-                                        <Col>
-                                            <p>
-                                                {lecture.description}
-                                            </p>
-                                        </Col>
-                                        <Col >
-                                            {
-                                                lecture.lecture?
-                                                    <Button href={`http://localhost:1337${lecture.lecture.url}`}>
-                                                        Скачать лекцию
-                                                    </Button>
-                                                    :
+                        props.getLecturesLength() > 0?
+                            props.lectures[0].Lectures.map((lecture, ind) => {
+                                if(lecture.semester === props.semester && props.teacher === lecture.Teacher){
+                                    return (
+                                        <div key={ind}>
+                                            <hr/>
+                                            <Row>
+                                                <Col>
+                                                    <p>
+                                                        {lecture.description}
+                                                    </p>
+                                                    <small>
+                                                        {props.teacher}
+                                                    </small>
+                                                </Col>
+                                                <Col >
+                                                    {
+                                                        lecture.lecture?
+                                                            <Button href={`http://localhost:1337${lecture.lecture.url}`}>
+                                                                Скачать лекцию
+                                                            </Button>
+                                                            :
 
-                                                    <Button disabled>
-                                                        Лекции нету
-                                                    </Button>
-                                            }
-                                        </Col>
-                                    </Row>
-                                    <hr/>
-                                </div>
-                            )
-                        })
+                                                            <Button disabled>
+                                                                Лекции нету
+                                                            </Button>
+                                                    }
+                                                </Col>
+                                            </Row>
+                                            <hr/>
+                                        </div>
+                                    )
+                                }
+                            }):
+                            <h3>Лекции отсутствуют</h3>
                     }
                 </Modal.Body>
             </Modal>

@@ -1,18 +1,15 @@
-import React, {useState} from 'react';
-import {Button, Col, Modal, Row} from "react-bootstrap";
-import ModalBachelorsLectures from "./ModalBachelorsLectures";
+import React from 'react';
+import {Modal} from "react-bootstrap";
+import BachelorBlock from "./BachelorBlock";
 
 const ModalBachelors = (props) => {
-    const [show, setShow] = useState(false)
-    const handleShow = () => setShow(true)
-    const handleClose = () => setShow(false)
+    const semesters = [1, 2, 3, 4, 5, 6, 7, 8]
+
     return (
         <>
-            <ModalBachelorsLectures show={show} lectures={props.lectures}
-                                    handleClose={handleClose}/>
             <Modal show={props.show} onHide={props.handleClose}>
                 <Modal.Header closeButton>
-                    <Modal.Title style={{textAlign: 'center'}} >
+                    <Modal.Title style={{textAlign: 'center'}}>
                         <h5>
                             Лекции для КС-14 -> КС-44 <br/> и <br/> КС-10 ->
                             КС-40
@@ -20,18 +17,24 @@ const ModalBachelors = (props) => {
                     </Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <Row>
-                        <Col>
-                            <Button onClick={handleShow}>
-                                <h5>
-                                    1 семестр
-                                </h5>
-                                <p>
-                                    Информатика (часть 1) (доц. Женса А.В.)
-                                </p>
-                            </Button>
-                        </Col>
-                    </Row>
+                    {
+                        semesters.map(semester => {
+                            return props.semesters.map(semesterDB => {
+                                if (semesterDB.Semester === semester) {
+                                    return (
+                                        <BachelorBlock lectures={props.lectures}
+                                                       desc={semesterDB.Description}
+                                                       semester={semester}
+                                                       key={semesterDB.id}
+                                                       teacher={semesterDB.Teacher}
+                                                       handleCloseSemesters={props.handleClose}
+                                                       handleShowSemesters={props.handleShow}
+                                        />
+                                    )
+                                }
+                            })
+                        })
+                    }
                 </Modal.Body>
             </Modal>
         </>

@@ -44,29 +44,37 @@ class Magisters extends React.Component {
                         }
                     ]
                 }
-            ]
+            ],
+            Semesters10: [],
+            Semesters12: []
         }
         this.handleChangeMagister10 = this.handleChangeMagister10.bind(this);
         this.handleChangeMagister12 = this.handleChangeMagister12.bind(this);
     }
 
     componentDidMount() {
-        axios.get('http://localhost:1337/lectures').then(res=> {
+        axios.get('http://localhost:1337/lectures').then(res => {
             this.setState({
                 Lectures: res.data
             })
         })
-    }
-
-    handleChangeMagister10(){
-        this.setState({
-            isMagisterShow10 : !this.state.isMagisterShow10
+        axios.get('http://localhost:1337/semesters').then(res => {
+            this.setState({
+                Semesters10: res.data[1].Semesters,
+                Semesters12: res.data[2].Semesters
+            })
         })
     }
 
-    handleChangeMagister12(){
+    handleChangeMagister10() {
         this.setState({
-            isMagisterShow12 : !this.state.isMagisterShow12
+            isMagisterShow10: !this.state.isMagisterShow10
+        })
+    }
+
+    handleChangeMagister12() {
+        this.setState({
+            isMagisterShow12: !this.state.isMagisterShow12
         })
     }
 
@@ -92,7 +100,10 @@ class Magisters extends React.Component {
                             системы и технологии (МК-10 - МК-20) - магистерская<br/> программа "Информационные
                             технологии
                             для цифрового проектирования"</Button>
-                        <ModalMagisters10 show={this.state.isMagisterShow10} lectures={this.state.Lectures} handleClose={this.handleChangeMagister10}/>
+                        <ModalMagisters10 show={this.state.isMagisterShow10}
+                                          lectures={this.state.Lectures}
+                                          semesters={this.state.Semesters10}
+                                          handleClose={this.handleChangeMagister10}/>
                     </Col>
                 </Row>
                 <Row className='mt-2'>
@@ -100,7 +111,10 @@ class Magisters extends React.Component {
                         <Button variant='light' onClick={this.handleChangeMagister12} style={{textDecoration: 'none'}}>Информационные
                             системы и технологии (МК-12 - МК-22) - магистерская<br/> программа "Информационные системы в
                             цифровой экономике"</Button>
-                        <ModalMagisters12 show={this.state.isMagisterShow12} lectures={this.state.Lectures} handleClose={this.handleChangeMagister12}/>
+                        <ModalMagisters12 show={this.state.isMagisterShow12}
+                                          lectures={this.state.Lectures}
+                                          semesters={this.state.Semesters12}
+                                          handleClose={this.handleChangeMagister12}/>
                     </Col>
                 </Row>
             </div>
