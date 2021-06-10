@@ -4,7 +4,6 @@ import {Button, Col, Modal, Row} from "react-bootstrap";
 const ModalBachelors = (props) => {
     const handleClose = ()=>{
         props.handleCloseLectures()
-        props.handleShowSemesters()
     }
 
 

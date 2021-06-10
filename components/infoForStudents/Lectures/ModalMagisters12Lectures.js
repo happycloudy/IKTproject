@@ -4,7 +4,7 @@ import {Button, Col, Modal, Row} from "react-bootstrap";
 const ModalBachelors = (props) => {
     return (
         <>
-            <Modal show={props.show} onHide={props.handleClose}>
+            <Modal show={props.show} onHide={props.handleCloseLectures}>
                 <Modal.Header closeButton>
                     <Modal.Title style={{textAlign: 'center'}}>
                         <h5>

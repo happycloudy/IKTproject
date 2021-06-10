@@ -48,8 +48,10 @@ class Magisters extends React.Component {
             Semesters10: [],
             Semesters12: []
         }
-        this.handleChangeMagister10 = this.handleChangeMagister10.bind(this);
-        this.handleChangeMagister12 = this.handleChangeMagister12.bind(this);
+        this.handleShowSemestersMagister10 = this.handleShowSemestersMagister10.bind(this);
+        this.handleCloseSemestersMagister10 = this.handleCloseSemestersMagister10.bind(this);
+        this.handleShowSemestersMagister12 = this.handleShowSemestersMagister12.bind(this);
+        this.handleCloseSemestersMagister12 = this.handleCloseSemestersMagister12.bind(this);
     }
 
     componentDidMount() {
@@ -66,15 +68,27 @@ class Magisters extends React.Component {
         })
     }
 
-    handleChangeMagister10() {
+    handleShowSemestersMagister10() {
         this.setState({
-            isMagisterShow10: !this.state.isMagisterShow10
+            isMagisterShow10: true
+        })
+    }
+    
+    handleCloseSemestersMagister10() {
+        this.setState({
+            isMagisterShow10: false
         })
     }
 
-    handleChangeMagister12() {
+    handleShowSemestersMagister12() {
         this.setState({
-            isMagisterShow12: !this.state.isMagisterShow12
+            isMagisterShow12: true
+        })
+    }
+
+    handleCloseSemestersMagister12() {
+        this.setState({
+            isMagisterShow12: false
         })
     }
 
@@ -96,25 +110,30 @@ class Magisters extends React.Component {
                 </Row>
                 <Row className='mt-4'>
                     <Col>
-                        <Button variant='light' onClick={this.handleChangeMagister10} style={{textDecoration: 'none'}}>Информационные
+                        <Button variant='light' onClick={this.handleShowSemestersMagister10} style={{textDecoration: 'none'}}>Информационные
                             системы и технологии (МК-10 - МК-20) - магистерская<br/> программа "Информационные
                             технологии
                             для цифрового проектирования"</Button>
                         <ModalMagisters10 show={this.state.isMagisterShow10}
                                           lectures={this.state.Lectures}
                                           semesters={this.state.Semesters10}
-                                          handleClose={this.handleChangeMagister10}/>
+                                          handleShowSemestersMagister10={this.handleShowSemestersMagister10}
+                                          handleCloseSemestersMagister10={this.handleCloseSemestersMagister10}
+
+                        />
                     </Col>
                 </Row>
                 <Row className='mt-2'>
                     <Col>
-                        <Button variant='light' onClick={this.handleChangeMagister12} style={{textDecoration: 'none'}}>Информационные
+                        <Button variant='light' onClick={this.handleShowSemestersMagister12} style={{textDecoration: 'none'}}>Информационные
                             системы и технологии (МК-12 - МК-22) - магистерская<br/> программа "Информационные системы в
                             цифровой экономике"</Button>
                         <ModalMagisters12 show={this.state.isMagisterShow12}
                                           lectures={this.state.Lectures}
                                           semesters={this.state.Semesters12}
-                                          handleClose={this.handleChangeMagister12}/>
+                                          handleShowSemestersMagister12={this.handleShowSemestersMagister12}
+                                          handleCloseSemestersMagister12={this.handleCloseSemestersMagister12}
+                        />
                     </Col>
                 </Row>
             </div>

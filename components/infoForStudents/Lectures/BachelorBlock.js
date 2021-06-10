@@ -6,9 +6,7 @@ import ModalBachelorsLectures from "./ModalBachelorsLectures";
 const BachelorBlock = (props) => {
     const [show, setShow] = useState(false)
 
-    const handleShow = () => {
-        setShow(true)
-    }
+    const handleShow = () => setShow(true)
     const handleClose = () => setShow(false)
     const getLecturesLength = () =>{
         let length = 0

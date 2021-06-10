@@ -39,7 +39,6 @@ const ModalBachelors = (props) => {
             </Modal>
         </>
     );
-
 };
 
 export default ModalBachelors;
