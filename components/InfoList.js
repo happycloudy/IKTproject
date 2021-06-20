@@ -10,6 +10,7 @@ import axios from "axios";
 
 function InfoList() {
     const [data, setData] = useState({
+        students: '',
         devs: '',
         lecturesAndSeminares: ''
     })
@@ -17,6 +18,7 @@ function InfoList() {
     const fetchData = async () =>{
         let data = await axios.get('http://localhost:1337/students')
         setData({
+            students: data.data.Students,
             devs: data.data.Develops,
             lecturesAndSeminares: data.data.ScienceLecturesAndSeminares
         })
@@ -31,7 +33,7 @@ function InfoList() {
                 <Col className='mt-2'>
                     <h3>Студентам</h3>
                 </Col>
-                <Students/>
+                <Students text={data.students}/>
                 <Col className='mt-5'>
                     <h3>Бакалаврам</h3>
                 </Col>
@@ -50,11 +52,11 @@ function InfoList() {
                 <Col className='mt-5'>
                     <h4>Разработки</h4>
                 </Col>
-                <Devs devs={data.devs}/>
+                <Devs text={data.devs}/>
                 <Col className='mt-5'>
                     <h4>Научные лекции и семинары</h4>
                 </Col>
-                <ScienceLectures lectures={data.lecturesAndSeminares}/>
+                <ScienceLectures text={data.lecturesAndSeminares}/>
             </div>
         </Container>
     );

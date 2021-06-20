@@ -16,7 +16,7 @@ export default function Information(props) {
             </Col>
             <Col style={maxHeightStyle}>
                 <div>
-                    {props.lectures}
+                    {props.text}
                 </div>
             </Col>
             <Col style={maxHeightStyle}>

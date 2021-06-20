@@ -10,21 +10,21 @@ const Diplomas = (props) => {
                 props.diplomas.map(diploma=>{
                     if(!diploma.DiplomaPDF){
                        return (
-                           <>
-                               <div key={diploma.id}>
+                           <div key={diploma.id}>
+                               <div>
                                    {diploma.Theme}
                                </div>
                                <hr/>
-                           </>
+                           </div>
                        )
                     }
                     return (
-                        <>
+                        <div key={diploma.id}>
                             <a href={`http://localhost:1337${diploma.DiplomaPDF.url}`} key={diploma.id}>
                                 {diploma.Theme}
                             </a>
                             <hr/>
-                        </>
+                        </div>
                     )
                 })
             }

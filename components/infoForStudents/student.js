@@ -1,4 +1,4 @@
-import {Container, Jumbotron, Col, Row, Collapse} from 'react-bootstrap'
+import {Col, Row} from 'react-bootstrap'
 
 export default function Students(props) {
     let maxHeightStyle ={
@@ -12,9 +12,8 @@ export default function Students(props) {
             <Col style={{background: '#308DE4', color: 'white', borderRadius: '30px'}}>
                 <Row>
                     <Col style={maxHeightStyle}>
-                        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium atque delectus
-                            deserunt distinctio ducimus eaque est expedita illo, iusto mollitia obcaecati
-                            perferendis sint voluptate! Est ipsam officia omnis quam rem!
+                        <div>
+                            {props.text}
                         </div>
                     </Col>
                     <Col style={maxHeightStyle}>
