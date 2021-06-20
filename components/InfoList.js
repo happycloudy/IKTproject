@@ -1,14 +1,30 @@
-import React from 'react';
-import {Col, Container, Row} from "react-bootstrap";
-import Aspirants from "./graduate/aspirants";
+import React, {useEffect, useState} from 'react';
+import {Col, Container} from "react-bootstrap";
 import Bachelor from "./infoForStudents/Bachelor";
 import Magisters from "./infoForStudents/Magisters";
 import Students from "./infoForStudents/student";
 import Devs from "./science/Devs";
 import ScienceLectures from "./science/ScienceLectures";
-import DiplomsUndergraduate from "./infoForStudents/diplomsUndergraduate";
+import DiplomsUndergraduate from "./infoForStudents/DiplomsUndergraduate";
+import axios from "axios";
 
-function InfoList(props) {
+function InfoList() {
+    const [data, setData] = useState({
+        devs: '',
+        lecturesAndSeminares: ''
+    })
+
+    const fetchData = async () =>{
+        let data = await axios.get('http://localhost:1337/students')
+        setData({
+            devs: data.data.Develops,
+            lecturesAndSeminares: data.data.ScienceLecturesAndSeminares
+        })
+    }
+
+    useEffect(()=>{
+        fetchData()
+    },[])
     return (
         <Container className='mt-5 mb-5' style={{backgroundColor: 'rgba(255,255,255,0.2)', textAlign: 'center', borderRadius: '15px'}}>
             <div>
@@ -34,11 +50,11 @@ function InfoList(props) {
                 <Col className='mt-5'>
                     <h4>Разработки</h4>
                 </Col>
-                <Devs/>
+                <Devs devs={data.devs}/>
                 <Col className='mt-5'>
                     <h4>Научные лекции и семинары</h4>
                 </Col>
-                <ScienceLectures/>
+                <ScienceLectures lectures={data.lecturesAndSeminares}/>
             </div>
         </Container>
     );

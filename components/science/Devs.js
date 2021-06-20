@@ -7,6 +7,7 @@ export default function Information(props) {
         justifyContent: 'center',
         alignItems: 'center'
     }
+
     return (
 
         <Row style={{background: '#308DE4', color: 'white', borderRadius: '30px'}}>
@@ -14,9 +15,8 @@ export default function Information(props) {
                 <h4>Программные разработки студентов и сотрудников</h4>
             </Col>
             <Col style={maxHeightStyle}>
-                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium atque delectus
-                    deserunt distinctio ducimus eaque est expedita illo, iusto mollitia obcaecati
-                    perferendis sint voluptate! Est ipsam officia omnis quam rem!
+                <div>
+                    {props.devs}
                 </div>
             </Col>
             <Col style={maxHeightStyle}>

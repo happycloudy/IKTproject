@@ -15,9 +15,8 @@ export default function Information(props) {
                      src={'https://st.depositphotos.com/1760224/3660/i/600/depositphotos_36606389-stock-photo-sport-success-on-sunset-background.jpg'}/>
             </Col>
             <Col style={maxHeightStyle}>
-                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium atque delectus
-                    deserunt distinctio ducimus eaque est expedita illo, iusto mollitia obcaecati
-                    perferendis sint voluptate! Est ipsam officia omnis quam rem!
+                <div>
+                    {props.lectures}
                 </div>
             </Col>
             <Col style={maxHeightStyle}>

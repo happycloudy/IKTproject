@@ -1,9 +1,6 @@
 import Header from '../components/general/header'
 import Footer from '../components/general/footer'
 import Head from 'next/head'
-import Students from '../components/infoForStudents/student'
-import Aspirants from '../components/graduate/aspirants'
-import {Container, Row, Col} from "react-bootstrap";
 import InfoList from "../components/InfoList";
 import Particles from "react-particles-js";
 
@@ -22,17 +19,17 @@ export default function InfoForStudents() {
         top: 0,
         left: 0,
         zIndex: -1,
-        height:'100%',
-        width:'100%',
+        height: '100%',
+        width: '100%',
         backgroundColor: 'white'
     }
-    const bodyStyle= {
+    const bodyStyle = {
         height: '100%',
         backgroundRepeat: 'no-repeat',    /*background-image: linear-gradient(rgb(12, 97, 33),rgb(104, 145, 162));*/
         position: 'relative',
         background: "transparent"
     }
-    const particleStyle ={
+    const particleStyle = {
         "particles": {
             "number": {
                 "value": 100
@@ -40,8 +37,8 @@ export default function InfoForStudents() {
             "size": {
                 "value": 2.5
             },
-            "color":{
-                "value":"#308DE4"
+            "color": {
+                "value": "#308DE4"
             },
 
         },
@@ -87,10 +84,10 @@ export default function InfoForStudents() {
                 <Particles style={background}
                            params={particleStyle}
                 />
-            <div style={linearTransitionUp}/>
-            <InfoList/>
-            <div style={linearTransition}>
-            </div>
+                <div style={linearTransitionUp}/>
+                <InfoList/>
+                <div style={linearTransition}>
+                </div>
             </div>
             <Footer/>
         </div>
