@@ -23,11 +23,17 @@ export default class App extends Component {
             color: 'white'
         }
         const cardStyle = {
-            border: '1px solid',
+            border: 'none',
             borderRadius: '10px',
             margin: 'auto',
             width: '20vw',
             backgroundColor: '#308DE4',
+        }
+        const unflippedStyle = {
+            position : 'relative'
+        }
+        const flippedStyle = {
+            position : 'absolute'
         }
 
         return (
