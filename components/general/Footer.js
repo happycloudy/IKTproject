@@ -1,9 +1,7 @@
 import {Container, Col, Row} from 'react-bootstrap'
 
 const FooterStyle = {
-    background: '-moz-linear-gradient(bottom, rgba(15,76,134,1), #308DE4 100%)', /* FF3.6+ */
-    background: 'linear-gradient(bottom, rgba(15,76,134,1), #308DE4 100%)', /* W3C */
-    background: '-webkit-linear-gradient(bottom, rgba(15,76,134,0.8), #308DE4 100%)',
+    background: 'linear-gradient(180deg, rgba(48,141,228,1) 0%, rgba(15,76,134,0.8) 100%);'
 }
 
 export default function Footer(props) {

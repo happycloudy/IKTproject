@@ -1,4 +1,4 @@
-import styles from '../../styles/Home.module.css'
+import styles from '../../styles/index.module.css'
 import {Container,Col,Row,Collapse} from 'react-bootstrap'
 import React from "react";
 

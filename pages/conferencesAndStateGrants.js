@@ -1,5 +1,5 @@
-import Header from '../components/general/header'
-import Footer from '../components/general/footer'
+import Header from '../components/general/Header'
+import Footer from '../components/general/Footer'
 import Head from 'next/head'
 import Particles from "react-particles-js";
 import Conferences from "../components/сonferencesAndStateGrants/conferences";
