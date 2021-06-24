@@ -1,13 +1,8 @@
 import {Container, Jumbotron, Col, Row} from 'react-bootstrap'
 import {Fade} from 'react-reveal'
-
+import styles from '../../styles/index.module.css'
 
 export default function Banner() {
-    const jumboStyle = {
-        background: '#308DE4',
-        color: 'white',
-        height: '100%'
-    }
     const imageBannerStyle = {
         height: '100%',
         width: '100%',
@@ -15,7 +10,7 @@ export default function Banner() {
     }
 
     return (
-        <Jumbotron style={jumboStyle} fluid className="mb-0 pb-5">
+        <div className={styles.bannerBlock}>
             <Container
                 style={{backgroundColor: 'rgba(255,255,255,0.2)', textAlign: 'center', borderRadius: '15px'}}>
                 <Row className="pb-3 mb-2">
@@ -58,6 +53,6 @@ export default function Banner() {
                     </Col>
                 </Row>
             </Container>
-        </Jumbotron>
+        </div>
     )
 }
