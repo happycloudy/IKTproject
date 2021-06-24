@@ -129,6 +129,15 @@
     justify-content: center;
 }
 
+.news{
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.news:hover {
+    transform: scale(1.05,1.05);
+}
+
 .particles {
     position: absolute;
     display: block;
@@ -151,6 +160,8 @@
 .allNewsLink:hover{
     color: white;
     text-decoration: none;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    transition: 1s;
 }
 
 .allNewsLink:after {
@@ -177,3 +188,4 @@
     display: flex;
     align-items: center;
 }
+

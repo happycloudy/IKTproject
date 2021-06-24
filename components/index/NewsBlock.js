@@ -27,7 +27,6 @@ export default function NewsBlock() {
     useEffect(async () => {
         let news = await fetchNews()
         setNews(news)
-        console.log(news)
     }, [])
 
 
@@ -38,7 +37,7 @@ export default function NewsBlock() {
             />
             <Jumbotron style={jumboStyle} fluid className="mb-0 mt-0 pt-3 pb-3">
                 <Container className="pb-3 pt-3" style={containerStyle}>
-                    <h1 className="mb-3" style={{color: 'white', textAlign: 'center'}}>Новости</h1>
+                    <h2 className="mb-3" style={{color: 'white', textAlign: 'center'}}>Новости</h2>
                     <Row>
                         {
                             news.map((news, id) =>
@@ -49,6 +48,9 @@ export default function NewsBlock() {
                             )
                         }
                     </Row>
+                    <a className={styles.allNewsLink} href='/news'>
+                        Все новости
+                    </a>
                 </Container>
             </Jumbotron>
         </div>
