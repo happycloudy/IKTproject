@@ -28,23 +28,16 @@ export default function Header() {
                         <Nav className="mr-auto">
                             <Nav.Link className="text-white" href="/">Главная</Nav.Link>
                             <NavDropdown title={
-                                <span className="text-white my-auto">Студентам</span>
+                                <span className="text-white my-auto">Информация</span>
                             } id="collasible-nav-dropdown">
-                                <NavDropdown.Item style={{color:"#308DE4"}} href="/infoForStudents">Студентам</NavDropdown.Item>
                                 <NavDropdown.Item style={{color:"#308DE4"}} href="/grants">О&nbsp;грантах</NavDropdown.Item>
                                 <NavDropdown.Item style={{color:"#308DE4"}} href="/olympic">Олимпиады</NavDropdown.Item>
                                 <NavDropdown.Item style={{color:"#308DE4"}} href="/conferencesAndStateGrants">Конференции&nbsp;и<br/>гос.&nbsp;гранты</NavDropdown.Item>
                                 <NavDropdown.Item style={{color:"#308DE4"}} href="/publicationsAndStudentsWorks">Публикации&nbsp;и<br/>студенческие&nbsp;работы</NavDropdown.Item>
                             </NavDropdown>
-                            <NavDropdown title={
-                                <span className="text-white my-auto">Аспирантам</span>
-                            } id="collasible-nav-dropdown">
-                                <NavDropdown.Item style={{color:"#308DE4"}} href="/graduate">Аспирантам</NavDropdown.Item>
-                                <NavDropdown.Item style={{color:"#308DE4"}} href="/grants">О&nbsp;грантах</NavDropdown.Item>
-                                <NavDropdown.Item style={{color:"#308DE4"}} href="/olympic">Олимпиады</NavDropdown.Item>
-                                <NavDropdown.Item style={{color:"#308DE4"}} href="/conferencesAndStateGrants">Конференции&nbsp;и<br/>гос.&nbsp;гранты</NavDropdown.Item>
-                                <NavDropdown.Item  style={{color:"#308DE4"}} href="/publicationsAndStudentsWorks">Публикации&nbsp;и<br/>студенческие&nbsp;работы</NavDropdown.Item>
-                            </NavDropdown>
+
+                            <Nav.Link className="text-white" href="/infoForStudents">Студентам</Nav.Link>
+                            <Nav.Link className="text-white" href="/graduate">Аспирантам</Nav.Link>
                             <Nav.Link className="text-white" href="/infoForEntrants">Абитуриентам</Nav.Link>
                             <Nav.Link className="text-white" href="/teachers">Преподаватели</Nav.Link>
                             <Nav.Link className="text-white" href="/about">О&nbsp;кафедре</Nav.Link>

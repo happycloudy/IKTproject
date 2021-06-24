@@ -9,10 +9,10 @@ export default class App extends Component {
         this.state = {
             isFlipped: false
         };
-        this.handleRotate = this.handleRotate.bind(this);
+        this.handleClick = this.handleClick.bind(this);
     }
 
-    handleRotate(e) {
+    handleClick(e) {
         e.preventDefault();
         this.setState(prevState => ({ isFlipped: !prevState.isFlipped }));
     }
@@ -26,8 +26,9 @@ export default class App extends Component {
             border: 'none',
             borderRadius: '10px',
             margin: 'auto',
-            width: '20vw',
+            width: '360px',
             backgroundColor: '#308DE4',
+            cursor: 'pointer'
         }
         const unflippedStyle = {
             position : 'relative'
@@ -39,7 +40,7 @@ export default class App extends Component {
         return (
             <ReactCardFlip isFlipped={this.state.isFlipped} flipDirection="vertical">
                     <Container style={containerStyle} className="mt-3 mb-3">
-                        <Card style={cardStyle} onMouseEnter={this.handleRotate}>
+                        <Card style={cardStyle} onClick={this.handleClick}>
                             <Card.Img variant="top" src="/Jensa.png"/>
                             <Card.Body>
                                 <Card.Title>Женса А.В.</Card.Title>
@@ -48,7 +49,7 @@ export default class App extends Component {
                         </Card>
                     </Container>
                     <Container style={containerStyle} className="mt-3 mb-3">
-                        <Card style={cardStyle} onMouseLeave={this.handleRotate}>
+                        <Card style={cardStyle} onClick={this.handleClick}>
                             <Card.Body style={{textAlign: "left"}}>
                                 <Card.Title>Женса Андрей Вячеславович</Card.Title>
                                 <Card.Text><b>Заместитель заведующего кафедрой</b><br/>Окончил: РХТУ им. Д.И.Менделеева<br/>
