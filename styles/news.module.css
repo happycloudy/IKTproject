@@ -1,0 +1,11 @@
+.newsHeader {
+    display: flex;
+    justify-content: center;
+}
+
+.news {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 5vh;
+}

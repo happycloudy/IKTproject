@@ -11,7 +11,7 @@ const News = (props) => {
 
 
     return (
-        <Col >
+        <Col>
             <Container className={styles.news} onClick={handleShow}>
                 <img
                     src={props.url}

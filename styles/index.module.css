@@ -129,13 +129,14 @@
     justify-content: center;
 }
 
-.news{
+.news {
     transition: 0.2s;
     cursor: pointer;
+    width: 30vw;
 }
 
 .news:hover {
-    transform: scale(1.05,1.05);
+    transform: scale(1.05, 1.05);
 }
 
 .particles {
@@ -157,7 +158,7 @@
     cursor: pointer;
 }
 
-.allNewsLink:hover{
+.allNewsLink:hover {
     color: white;
     text-decoration: none;
     box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
@@ -177,11 +178,11 @@
 }
 
 .allNewsLink:hover:after,
-.allNewsLink:focus:after{
+.allNewsLink:focus:after {
     width: 100%;
 }
 
-.bannerBlock{
+.bannerBlock {
     height: 90vh;
     color: white;
     background: #308DE4;
@@ -189,3 +190,33 @@
     align-items: center;
 }
 
+.directionBlock {
+    background-color: #308DE4;
+    height: 120vh;
+    margin-top: 5vh;
+    margin-bottom: 1vh; /*убрать потом*/
+}
+
+.directionHeader {
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding-top: 10vh;
+}
+
+.directionWindow {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    border-radius: 20px;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+.directionExamsHeader {
+    color: #dfceae;
+}
+
+.directionExams {
+
+}

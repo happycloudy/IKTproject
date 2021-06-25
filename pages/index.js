@@ -5,6 +5,7 @@ import NewsBlock from '../components/index/NewsBlock'
 import Head from 'next/head'
 import '../styles/index.module.css'
 import React from "react";
+import DirectionsBlock from "../components/index/DirectionsBlock";
 
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
             <Header/>
             <Banner/>
             <NewsBlock/>
+            <DirectionsBlock/>
             <Footer/>
         </>
     )
