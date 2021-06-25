@@ -17,6 +17,7 @@ export default function Home() {
                 <title>Главная</title>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
+
             <Header/>
             <Banner/>
             <NewsBlock/>
