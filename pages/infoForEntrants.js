@@ -1,17 +1,17 @@
 import Header from '../components/general/Header'
 import Footer from '../components/general/Footer'
 import Head from 'next/head'
-import ScienceLis from '../components/infoForEntrantsList'
+import ScienceList from '../components/infoForEntrantsList'
 import Particles from "react-particles-js";
 
 export default function InfoForEntrants() {
     const linearTransition = {
         height: '20vh',
-        background: '#308DE4 linear-gradient(0deg, rgba(48,141,228,1) 0%, rgba(255,255,255,1) 100%)'
+        background: '#308DE4 linear-gradient(0deg, rgba(48,141,228,1) 0%, rgba(255,255,255,1) 100%)',
     }
     const linearTransitionUp = {
         height: '10vh',
-        background: '#308DE4 linear-gradient(180deg, rgba(48,141,228,1) 0%, rgba(255,255,255,1) 100%)'
+        background: '#308DE4 linear-gradient(180deg, rgba(48,141,228,1) 0%, rgba(255,255,255,1) 100%)',
     }
     const background = {
         position: 'absolute',
@@ -84,11 +84,12 @@ export default function InfoForEntrants() {
                 <Particles style={background}
                            params={particleStyle}
                 />
-            <div style={linearTransitionUp}>
-            </div>
-            <ScienceLis/>
-            <div style={linearTransition}>
-            </div>
+                <div style={linearTransitionUp}/>
+                <ScienceList/>
+
+
+
+                <div style={linearTransition}/>
             </div>
             <Footer/>
         </div>
