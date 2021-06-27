@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d4e1b011-95a9-4583-84af-5982b1b3cec9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/iktproject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/iktproject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/index/Direction.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/index/Direction.js" afterDir="false" />
+    <list default="true" id="d4e1b011-95a9-4583-84af-5982b1b3cec9" name="Default Changelist" comment="'ended with Index' + added animation to btn 'MoreInfo'">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/general/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/general/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/index/DirectionsBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/index/DirectionsBlock.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/index.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index.module.css" afterDir="false" />
     </list>
@@ -68,8 +64,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1624750139789</updated>
-      <workItem from="1624750143663" duration="3516000" />
+      <workItem from="1624750143663" duration="5894000" />
     </task>
+    <task id="LOCAL-00001" summary="ended with Index">
+      <created>1624753815969</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1624753815969</updated>
+    </task>
+    <task id="LOCAL-00002" summary="'ended with Index' + added animation to btn 'MoreInfo'">
+      <created>1624754460336</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1624754460336</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -85,5 +96,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ended with Index" />
+    <MESSAGE value="'ended with Index' + added animation to btn 'MoreInfo'" />
+    <option name="LAST_COMMIT_MESSAGE" value="'ended with Index' + added animation to btn 'MoreInfo'" />
   </component>
 </project>

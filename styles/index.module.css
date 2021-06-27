@@ -225,9 +225,26 @@
     flex-direction: column;
 }
 
-.MoreInfo {
+.moreInfo {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 5vh;
 }
+
+.moreInfoButton {
+    animation: Grow 1s infinite ease-in-out;
+}
+
+@keyframes Grow {
+    0% {
+        box-shadow: none;
+    }
+    50% {
+        box-shadow: 0px 0px 60px 1px rgba(34, 60, 80, 0.2);
+    }
+    100% {
+        box-shadow: none;
+    }
+}
+
