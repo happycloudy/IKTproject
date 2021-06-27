@@ -2,10 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4e1b011-95a9-4583-84af-5982b1b3cec9" name="Default Changelist" comment="'ended with Index' + added animation to btn 'MoreInfo'">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/general/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/general/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/index/DirectionsBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/index/DirectionsBlock.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/index.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/index/ParticleStyle.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/index/ParticleStyle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/about.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/conferencesAndStateGrants.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/conferencesAndStateGrants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/graduate.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/graduate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/grants.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/grants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/infoForEntrants.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/infoForEntrants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/infoForStudents.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/infoForStudents.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/olympic.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/olympic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/publicationsAndStudentsWorks.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/publicationsAndStudentsWorks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/teachers.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/teachers.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +104,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ended with Index" />

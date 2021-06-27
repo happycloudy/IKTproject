@@ -3,6 +3,7 @@ import Footer from '../components/general/Footer'
 import Head from 'next/head'
 import ScienceList from '../components/infoForEntrantsList'
 import Particles from "react-particles-js";
+import particleStyle from '../components/index/ParticleStyle'
 
 export default function InfoForEntrants() {
     const linearTransition = {
@@ -29,49 +30,7 @@ export default function InfoForEntrants() {
         position: 'relative',
         background: "transparent"
     }
-    const particleStyle ={
-        "particles": {
-            "number": {
-                "value": 100
-            },
-            "size": {
-                "value": 2.5
-            },
-            "color":{
-                "value":"#308DE4"
-            },
 
-        },
-        "size": {
-            "value": 5,
-            "random": true,
-            "anim": {
-                "enable": false,
-                "speed": 40,
-                "size_min": 0.1,
-                "sync": false
-            }
-        },
-        "interactivity": {
-            "events": {
-                "onhover": {
-                    "enable": true,
-                    "mode": "repulse"
-                }
-            }
-        },
-        "shape": {
-            "type": "circle",
-            "stroke": {
-                "width": 0,
-                "color": "#308DE4"
-            },
-            "polygon": {
-                "nb_sides": 5
-            },
-        },
-        "retina_detect": true,
-    }
 
     return (
         <div>

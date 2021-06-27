@@ -4,7 +4,7 @@ const particleStyle = {
             "value": 100
         },
         "size": {
-            "value": 2.5
+            "value": 4.5
         },
         "color": {
             "value": "#308DE4"
