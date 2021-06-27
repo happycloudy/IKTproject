@@ -1,28 +1,52 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import styles from '../../styles/index.module.css'
-import {Col, Container, Row} from "react-bootstrap";
+import {Button, Col, Container, Row} from "react-bootstrap";
 import Direction from "./Direction";
+import axios from "axios";
+import Fade from 'react-reveal'
 
 const DirectionsBlock = () => {
-    return (
-        <div className={styles.directionBlock}>
-            <div className={styles.directionHeader}>
-                <h3>
-                    Направления
-                </h3>
-            </div>
+    const [directions, setDirections] = useState([])
 
-            <Container className='mt-5'>
-                <Row>
-                    <Col>
-                        <Direction/>
-                    </Col>
-                    <Col>
-                        <Direction/>
-                    </Col>
-                </Row>
-            </Container>
-        </div>
+    const fetch = async () => {
+        return (await axios.get('http://localhost:1337/index')).data
+    }
+
+    useEffect(async () => {
+        let directions = await fetch()
+        setDirections(directions.Direction)
+    }, [])
+
+
+    return (
+        <Fade top>
+            <div className={styles.directionBlock}>
+                <div className={styles.directionHeader}>
+                    <h3>
+                        Направления
+                    </h3>
+                </div>
+
+                <Container className='mt-5'>
+                    <Row>
+                        {
+                            directions.map(direction =>
+                                <Col key={direction.id}>
+                                    <Direction
+                                        direction={direction}
+                                    />
+                                </Col>
+                            )
+                        }
+                    </Row>
+                </Container>
+                <div className={styles.MoreInfo}>
+                    <Button variant='info'>
+                        Узнать больше о поступление
+                    </Button>
+                </div>
+            </div>
+        </Fade>
     );
 };
 

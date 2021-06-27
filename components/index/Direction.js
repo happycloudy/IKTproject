@@ -1,35 +1,27 @@
 import React from 'react';
 import styles from '../../styles/index.module.css'
 
-const Direction = () => {
+const Direction = (props) => {
     return (
         <div className={styles.directionWindow}>
-            <h4>
-                09.03.01 <br/>
-                Информатика и вычислительная техника
-            </h4>
+            <div className={styles.directionInfo}>
+                <h4>
+                    {props.direction.DirectionNumber} <br/>
+                    {props.direction.Direction}
+                </h4>
 
-            <h5 className={styles.directionExamsHeader}>
-                Экзамены ЕГЭ:
-            </h5>
-            <div>
-                Русский язык
-            </div>
-            <div>
-                Математика
-            </div>
-            <div>
-                Физика или информатика
-            </div>
-
-            <h5 className={styles.directionExamsHeader}>
-                Здесь вы научитесь:
-            </h5>
-            <div>
-                C, C++, C#, Matlab
+                <h5 className={styles.directionExamsHeader}>
+                    Здесь вы научитесь:
+                </h5>
+                {props.direction.WhatLearning.split(';').map((el, id) =>
+                    <div key={id}>
+                        {el}
+                    </div>
+                )}
             </div>
         </div>
     );
-};
+}
+;
 
 export default Direction;

@@ -173,7 +173,6 @@
     height: 3px;
     width: 0;
     -webkit-transition: width .5s ease-in-out;
-    -moz--transition: width .5s ease-in-out;
     transition: width .5s ease-in-out;
 }
 
@@ -188,13 +187,12 @@
     background: #308DE4;
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 
 .directionBlock {
     background-color: #308DE4;
-    height: 120vh;
     margin-top: 5vh;
-    margin-bottom: 1vh; /*убрать потом*/
 }
 
 .directionHeader {
@@ -211,12 +209,25 @@
     border-radius: 20px;
     padding-top: 3vh;
     padding-bottom: 3vh;
+    height: 60vh;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 }
 
 .directionExamsHeader {
     color: #dfceae;
 }
 
-.directionExams {
+.directionInfo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
+.MoreInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
 }
