@@ -20,11 +20,11 @@ export default function Science() {
         top: 0,
         left: 0,
         zIndex: -1,
-        height:'100%',
-        width:'100%',
+        height: '100%',
+        width: '100%',
         backgroundColor: 'white'
     }
-    const bodyStyle= {
+    const bodyStyle = {
         height: '100%',
         backgroundRepeat: 'no-repeat',    /*background-image: linear-gradient(rgb(12, 97, 33),rgb(104, 145, 162));*/
         position: 'relative',
@@ -43,11 +43,11 @@ export default function Science() {
                 <Particles style={background}
                            params={particleStyle}
                 />
-            <div style={linearTransitionUp}>
-            </div>
-            <StudyInfo/>
-            <div style={linearTransitionDown}>
-            </div>
+                <div style={linearTransitionUp}>
+                </div>
+                <StudyInfo/>
+                <div style={linearTransitionDown}>
+                </div>
             </div>
             <Footer/>
         </div>

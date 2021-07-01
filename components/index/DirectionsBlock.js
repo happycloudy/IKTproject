@@ -41,7 +41,7 @@ const DirectionsBlock = () => {
                     </Row>
                 </Container>
                 <div className={styles.moreInfo}>
-                    <Button variant='info' className={styles.moreInfoButton}>
+                    <Button variant='info' href='http://localhost:3000/infoForEntrants' className={styles.moreInfoButton}>
                         Узнать больше о поступление
                     </Button>
                 </div>

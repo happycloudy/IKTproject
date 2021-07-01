@@ -1,66 +1,38 @@
-import {Component} from "react";
-import ReactCardFlip from 'react-card-flip';
-import {Card, Container} from "react-bootstrap";
+import {Card} from "react-bootstrap";
+import styles from '../../styles/teachers.module.css'
 
-
-export default class App extends Component {
-    constructor() {
-        super();
-        this.state = {
-            isFlipped: false
-        };
-        this.handleClick = this.handleClick.bind(this);
-    }
-
-    handleClick(e) {
-        e.preventDefault();
-        this.setState(prevState => ({ isFlipped: !prevState.isFlipped }));
-    }
-
-    render() {
-        const containerStyle = {
-            textAlign: 'center',
-            color: 'white'
-        }
-        const cardStyle = {
-            border: 'none',
-            borderRadius: '10px',
-            margin: 'auto',
-            width: '360px',
-            backgroundColor: '#308DE4',
-            cursor: 'pointer'
-        }
-        const unflippedStyle = {
-            position : 'relative'
-        }
-        const flippedStyle = {
-            position : 'absolute'
-        }
-
-        return (
-            <ReactCardFlip isFlipped={this.state.isFlipped} flipDirection="vertical">
-                    <Container style={containerStyle} className="mt-3 mb-3">
-                        <Card style={cardStyle} onClick={this.handleClick}>
-                            <Card.Img variant="top" src="/Jensa.png"/>
-                            <Card.Body>
-                                <Card.Title>Женса А.В.</Card.Title>
-                                <Card.Text>Доцент</Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </Container>
-                    <Container style={containerStyle} className="mt-3 mb-3">
-                        <Card style={cardStyle} onClick={this.handleClick}>
-                            <Card.Body style={{textAlign: "left"}}>
-                                <Card.Title>Женса Андрей Вячеславович</Card.Title>
-                                <Card.Text><b>Заместитель заведующего кафедрой</b><br/>Окончил: РХТУ им. Д.И.Менделеева<br/>
-                                    Специальность по диплому: Основные процессы химических производств и химическая кибернетика<br/>
-                                    Ученая степень: кандидат технических наук<br/>
-                                    Ученое звание: Доцент<br/>
-                                    Основное место работы: ФГБОУ ВО «Российский химико-технологический университет им. Д.И. Менделеева»</Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </Container>
-            </ReactCardFlip>
-        )
-    }
+export default function TutorCard(props) {
+    return (
+        <div className={styles.wrap}>
+            <div className={styles.card}>
+                <div className={styles.front}>
+                    <Card className={styles.frontCard}>
+                        <img
+                            width={300}
+                            height={300}
+                            className="card-img-top"
+                            src={props.img}
+                            alt={props.name}
+                        />
+                        <Card.Body>
+                            <Card.Title>{props.name}</Card.Title>
+                            <Card.Text>{props.position}</Card.Text>
+                        </Card.Body>
+                    </Card>
+                </div>
+                <div className={styles.back}>
+                    <Card className={styles.backCard}>
+                        <Card.Body style={{textAlign: "left"}}>
+                            <Card.Title>{props.name}</Card.Title>
+                            <Card.Text>
+                                <b>{props.position}</b>
+                                <br/>
+                                {props.biography}
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                </div>
+            </div>
+        </div>
+    )
 }
