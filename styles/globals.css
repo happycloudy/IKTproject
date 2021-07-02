@@ -1,8 +1,19 @@
-.modal-100h{
+.modal-100h {
     height: 100%;
 }
 
-html, body{
+html, body {
     margin: 0;
     padding: 0;
+}
+
+.particlesBackground {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background-color: white;
 }

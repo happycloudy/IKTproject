@@ -22,17 +22,7 @@ export default  function StudyInfo(props) {
                         <Diploms/>
                     </Col>
                 </Row>
-                <Col className='mt-5'>
-                    <h3>Научная деятельность</h3>
-                </Col>
-                <Col className='mt-5'>
-                    <h4>Разработки</h4>
-                </Col>
-                <Devs/>
-                <Col className='mt-5'>
-                    <h4>Научные лекции и семинары</h4>
-                </Col>
-                <ScienceLectures/>
+
 
             </Container>
         </div>

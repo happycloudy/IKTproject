@@ -127,12 +127,24 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
 }
 
 .news {
     transition: 0.2s;
     cursor: pointer;
-    width: 30vw;
+    background-color: #308DE4;
+    color: white;
+    height: 20rem;
+    margin-top: 2vh;
+    border: 0;
+}
+
+@media (min-width: 768px) {
+    .news {
+        width: 18rem;
+    }
 }
 
 .news:hover {
@@ -211,6 +223,7 @@
     padding-bottom: 3vh;
     height: 60vh;
     box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    margin-top: 2vh;
 }
 
 .directionExamsHeader {
@@ -247,4 +260,3 @@
         box-shadow: none;
     }
 }
-

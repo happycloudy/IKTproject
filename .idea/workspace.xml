@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d4e1b011-95a9-4583-84af-5982b1b3cec9" name="Default Changelist" comment="fixed import particles settings">
-      <change afterPath="$PROJECT_DIR$/styles/teachers.module.css" afterDir="false" />
+    <list default="true" id="d4e1b011-95a9-4583-84af-5982b1b3cec9" name="Default Changelist" comment="teachers page completed (need to fix some styles)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/index/DirectionsBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/index/DirectionsBlock.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/teachers/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/teachers/Card.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/teachers/Tutors.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/teachers/Tutors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/graduate.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/graduate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/graduateList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/graduateList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/index/News.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/index/News.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/news/AllNews.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/news/AllNews.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/teachers.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/teachers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/index.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/news.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/news.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624836455171</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="teachers page completed (need to fix some styles)">
+      <created>1625100287430</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1625100287430</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,6 +133,7 @@
     <MESSAGE value="ended with Index" />
     <MESSAGE value="'ended with Index' + added animation to btn 'MoreInfo'" />
     <MESSAGE value="fixed import particles settings" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed import particles settings" />
+    <MESSAGE value="teachers page completed (need to fix some styles)" />
+    <option name="LAST_COMMIT_MESSAGE" value="teachers page completed (need to fix some styles)" />
   </component>
 </project>

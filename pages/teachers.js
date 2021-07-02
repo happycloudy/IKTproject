@@ -25,32 +25,31 @@ export default function Teachers() {
         backgroundColor: 'white'
     }
     const bodyStyle = {
-        height: '100%',
-        backgroundRepeat: 'no-repeat',    /*background-image: linear-gradient(rgb(12, 97, 33),rgb(104, 145, 162));*/
+        backgroundRepeat: 'no-repeat',
         position: 'relative',
         background: "transparent",
-        width: '100vw'
+        width: '100%'
     }
 
 
     return (
-        <div>
+        <>
             <Head>
                 <title>Преподаватели</title>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
             <Header/>
+
             <div style={bodyStyle}>
-                <Particles style={background}
-                           params={particleStyle}
-                />
                 <div style={linearTransitionUp}/>
-
+                <Particles
+                    className='particlesBackground'
+                    params={particleStyle}
+                />
                 <Tutors/>
-
                 <div style={linearTransition}/>
             </div>
             <Footer/>
-        </div>
+        </>
     )
 }

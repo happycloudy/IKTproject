@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import axios from "axios";
 import News from "../index/News";
-import {Container} from "react-bootstrap";
+import {Container, Row} from "react-bootstrap";
 import styles from '../../styles/news.module.css'
 
 
@@ -19,20 +19,20 @@ const AllNews = () => {
 
 
     return (
-        <Container className='mt-5 '>
+        <Container className='mt-5 mb-5'>
             <div className={styles.newsHeader}>
                 <h3>
                     Все новости
                 </h3>
             </div>
-            <div className={styles.news}>
+            <Row className='mt-3'>
                 {news.map((news,id)=>
                     <News key={id}
                           url={news.PostImage ? 'http://localhost:1337' + news.PostImage.url : '/NotFoundImage.jpg'}
                           news={news}
                     />
                 )}
-            </div>
+            </Row>
         </Container>
     );
 };
