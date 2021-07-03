@@ -1,4 +1,5 @@
 import {Col, Row} from 'react-bootstrap'
+import styles from '../../styles/students.module.css'
 
 export default function Information(props) {
     let maxHeightStyle = {
@@ -20,7 +21,7 @@ export default function Information(props) {
                 </div>
             </Col>
             <Col style={maxHeightStyle}>
-                <img style={{maxHeight: '80%', borderRadius: '30px'}}
+                <img className={styles.imgStudent}
                      src={'https://st.depositphotos.com/1760224/3660/i/600/depositphotos_36606389-stock-photo-sport-success-on-sunset-background.jpg'}/>
             </Col>
         </Row>

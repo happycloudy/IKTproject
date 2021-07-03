@@ -1,8 +1,6 @@
 import React from 'react';
 
 const Diplomas = (props) => {
-
-
     return (
         <>
             <hr/>
@@ -12,16 +10,18 @@ const Diplomas = (props) => {
                        return (
                            <div key={diploma.id}>
                                <div>
-                                   {diploma.Theme}
+                                   {`${diploma.Author} - ${diploma.Theme}`}
                                </div>
                                <hr/>
                            </div>
                        )
                     }
+
+
                     return (
                         <div key={diploma.id}>
                             <a href={`http://localhost:1337${diploma.DiplomaPDF.url}`} key={diploma.id}>
-                                {diploma.Theme}
+                                {`${diploma.Author} - ${diploma.Theme}`}
                             </a>
                             <hr/>
                         </div>

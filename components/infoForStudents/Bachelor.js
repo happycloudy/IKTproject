@@ -2,6 +2,7 @@ import React from 'react';
 import {Row, Col, Button} from "react-bootstrap";
 import ModalBachelors from "./Lectures/ModalBachelors";
 import axios from "axios";
+import styles from '../../styles/students.module.css'
 
 class Bachelor extends React.Component {
     constructor(props) {
@@ -41,12 +42,13 @@ class Bachelor extends React.Component {
 
     }
 
-    handleShowBachelorSemesters(){
+    handleShowBachelorSemesters() {
         this.setState({
             isBachelorSemestersShow: true
         })
     }
-    handleCloseBachelorSemesters(){
+
+    handleCloseBachelorSemesters() {
         this.setState({
             isBachelorSemestersShow: false
         })
@@ -71,9 +73,12 @@ class Bachelor extends React.Component {
                 </Row>
                 <Row className='mt-4'>
                     <Col>
-                        <Button variant='light' onClick={this.handleShowBachelorSemesters} style={{textDecoration: 'none'}}>Информационные
+                        <Button variant='light' onClick={this.handleShowBachelorSemesters}
+                                className={styles.clickableButton}>
+                            Информационные
                             системы и технологии
-                            (КС-10 - КС-40)</Button>
+                            (КС-10 - КС-40)
+                        </Button>
                         <ModalBachelors show={this.state.isBachelorSemestersShow}
                                         lectures={this.state.Lectures}
                                         semesters={this.state.Semesters}
@@ -84,9 +89,12 @@ class Bachelor extends React.Component {
                 </Row>
                 <Row className='mt-2'>
                     <Col>
-                        <Button variant='light' onClick={this.handleShowBachelorSemesters} style={{textDecoration: 'none'}}>Информатика
+                        <Button variant='light' onClick={this.handleShowBachelorSemesters}
+                                className={styles.clickableButton}>
+                            Информатика
                             и вычислительная техника
-                            (КС-14 - КС-44)</Button>
+                            (КС-14 - КС-44)
+                        </Button>
                     </Col>
                 </Row>
             </div>

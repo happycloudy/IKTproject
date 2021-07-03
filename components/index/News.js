@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Card, Col, Container} from "react-bootstrap";
+import {Card, Col} from "react-bootstrap";
 import styles from '../../styles/index.module.css'
 import NewsModal from "./NewsModal";
 

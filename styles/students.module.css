@@ -1,0 +1,15 @@
+.imgStudent {
+    max-height: 80%;
+    border-radius: 30px;
+}
+
+@media (max-width: 768px) {
+    .imgStudent {
+        max-height: 50%;
+    }
+}
+
+.clickableButton {
+    width: 80%;
+    text-decoration: none;
+}

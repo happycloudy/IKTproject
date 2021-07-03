@@ -1,7 +1,7 @@
 import React from 'react';
 import {Row, Col, Button, Accordion, Card} from "react-bootstrap";
 import axios from "axios";
-import DiplomasDirection from "../Diplomases/DiplomasDirection";
+import DiplomasDirection from "../diplomases/DiplomasDirection";
 
 class DiplomsUndergraduate extends React.Component {
     constructor(props) {
@@ -38,10 +38,11 @@ class DiplomsUndergraduate extends React.Component {
         }
         return (
             <div style={BlockStyle} className='mt-2 d-flex justify-content-center'>
-                <Row>
-                    <Col>
-                        {this.state.years.map((year,id) =>
-                            <Accordion key={id}>
+
+                {this.state.years.map((year, id) =>
+                    <Row style={{width:'100%'}} key={id}>
+                        <Col>
+                            <Accordion>
                                 <Card>
                                     <Card.Header>
                                         <Accordion.Toggle as={Button} variant="link" eventKey="0">
@@ -57,9 +58,9 @@ class DiplomsUndergraduate extends React.Component {
                                     </Accordion.Collapse>
                                 </Card>
                             </Accordion>
-                        )}
-                    </Col>
-                </Row>
+                        </Col>
+                    </Row>
+                )}
             </div>
         );
     }

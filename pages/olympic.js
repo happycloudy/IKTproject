@@ -43,10 +43,10 @@ export default function Olympic() {
                 <Particles style={background}
                            params={particleStyle}
                 />
-                <div style={linearTransitionUp}>
+                <div className='linearTransitionUp'>
                 </div>
                 <Olympics/>
-                <div style={linearTransition}>
+                <div className='linearTransition'>
                 </div>
             </div>
             <Footer/>

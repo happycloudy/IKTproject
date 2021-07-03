@@ -20,6 +20,8 @@ export default function TutorCard(props) {
                         </Card.Body>
                     </Card>
                 </div>
+
+
                 <div className={styles.back}>
                     <Card className={styles.backCard}>
                         <Card.Body style={{textAlign: "left"}}>

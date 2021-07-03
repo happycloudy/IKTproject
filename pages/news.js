@@ -7,7 +7,9 @@ const News = () => {
     return (
         <>
             <Header/>
+            <div className='linearTransitionUp'/>
             <AllNews/>
+            <div className='linearTransition'/>
             <Footer/>
         </>
     );

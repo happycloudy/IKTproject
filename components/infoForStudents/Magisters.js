@@ -3,6 +3,7 @@ import {Row, Col, Button} from "react-bootstrap";
 import ModalMagisters10 from "./Lectures/ModalMagisters10";
 import ModalMagisters12 from "./Lectures/ModalMagisters12";
 import axios from "axios";
+import styles from '../../styles/students.module.css'
 
 class Magisters extends React.Component {
     constructor(props) {
@@ -73,7 +74,7 @@ class Magisters extends React.Component {
             isMagisterShow10: true
         })
     }
-    
+
     handleCloseSemestersMagister10() {
         this.setState({
             isMagisterShow10: false
@@ -110,10 +111,13 @@ class Magisters extends React.Component {
                 </Row>
                 <Row className='mt-4'>
                     <Col>
-                        <Button variant='light' onClick={this.handleShowSemestersMagister10} style={{textDecoration: 'none'}}>Информационные
+                        <Button variant='light' onClick={this.handleShowSemestersMagister10}
+                                className={styles.clickableButton}>
+                            Информационные
                             системы и технологии (МК-10 - МК-20) - магистерская<br/> программа "Информационные
                             технологии
-                            для цифрового проектирования"</Button>
+                            для цифрового проектирования"
+                        </Button>
                         <ModalMagisters10 show={this.state.isMagisterShow10}
                                           lectures={this.state.Lectures}
                                           semesters={this.state.Semesters10}
@@ -125,9 +129,12 @@ class Magisters extends React.Component {
                 </Row>
                 <Row className='mt-2'>
                     <Col>
-                        <Button variant='light' onClick={this.handleShowSemestersMagister12} style={{textDecoration: 'none'}}>Информационные
+                        <Button variant='light' onClick={this.handleShowSemestersMagister12}
+                                className={styles.clickableButton}>
+                            Информационные
                             системы и технологии (МК-12 - МК-22) - магистерская<br/> программа "Информационные системы в
-                            цифровой экономике"</Button>
+                            цифровой экономике"
+                        </Button>
                         <ModalMagisters12 show={this.state.isMagisterShow12}
                                           lectures={this.state.Lectures}
                                           semesters={this.state.Semesters12}

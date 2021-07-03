@@ -1,4 +1,4 @@
-import {Container} from 'react-bootstrap'
+import {Col, Container, Row} from 'react-bootstrap'
 import CardFlip from './Card'
 import styles from '../../styles/teachers.module.css'
 import {useEffect, useState} from "react";
@@ -17,27 +17,28 @@ export default function Tutors(props) {
     }, [])
 
     return (
-        <>
-            <Container>
-                <div className='d-flex justify-content-center'>
-                    <h3>
-                        Преподаватели
-                    </h3>
-                </div>
+        <Container>
 
-                <div className={styles.teachers}>
-                    {
-                        teachers.map((teacher, id) =>
+            <div className='d-flex justify-content-center'>
+                <h3>
+                    Преподаватели
+                </h3>
+            </div>
+
+            <Row className={styles.teachers}>
+                {
+                    teachers.map((teacher, id) =>
+                        <Col>
                             <CardFlip key={id}
                                       name={teacher.Name}
                                       position={teacher.Position}
                                       biography={teacher.Biography}
-                                      img={teacher.Avatar?'http://localhost:1337' + teacher.Avatar.url : null}
+                                      img={teacher.Avatar ? 'http://localhost:1337' + teacher.Avatar.url : null}
                             />
-                        )
-                    }
-                </div>
-            </Container>
-        </>
+                        </Col>
+                    )
+                }
+            </Row>
+        </Container>
     )
 }

@@ -6,25 +6,17 @@ import InfoGrant from "../components/infoGrants/infoGrant";
 import particleStyle from '../components/index/ParticleStyle'
 
 export default function Grants() {
-    const linearTransition = {
-        height: '20vh',
-        background: '#308DE4 linear-gradient(0deg, rgba(48,141,228,1) 0%, rgba(255,255,255,1) 100%)'
-    }
-    const linearTransitionUp = {
-        height: '10vh',
-        background: '#308DE4 linear-gradient(180deg, rgba(48,141,228,1) 0%, rgba(255,255,255,1) 100%)'
-    }
     const background = {
         position: 'absolute',
         display: 'block',
         top: 0,
         left: 0,
         zIndex: -1,
-        height:'100%',
-        width:'100%',
+        height: '100%',
+        width: '100%',
         backgroundColor: 'white'
     }
-    const bodyStyle= {
+    const bodyStyle = {
         height: '100%',
         backgroundRepeat: 'no-repeat',    /*background-image: linear-gradient(rgb(12, 97, 33),rgb(104, 145, 162));*/
         position: 'relative',
@@ -43,10 +35,10 @@ export default function Grants() {
                 <Particles style={background}
                            params={particleStyle}
                 />
-                <div style={linearTransitionUp}>
+                <div className='linearTransitionUp'>
                 </div>
                 <InfoGrant/>
-                <div style={linearTransition}>
+                <div className='linearTransition'>
                 </div>
             </div>
             <Footer/>

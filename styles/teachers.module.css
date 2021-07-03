@@ -1,5 +1,5 @@
 .teachers {
-    margin-bottom: 3vh;
+    /*margin-bottom: 3vh;*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,9 +7,7 @@
 }
 
 .wrap {
-    margin: 10vh;
-    width: 17rem;
-    height: 100%;
+    margin: 12vh;
     left: 0;
     top: 0;
     display: flex;
@@ -49,7 +47,6 @@
     border: none;
     border-radius: 10px;
     background-color: #308DE4;
-    margin: 1vh;
     text-align: center;
     color: white;
 }

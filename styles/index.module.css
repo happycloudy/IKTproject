@@ -136,7 +136,7 @@
     cursor: pointer;
     background-color: #308DE4;
     color: white;
-    height: 20rem;
+    height: 21rem;
     margin-top: 2vh;
     border: 0;
 }
@@ -144,6 +144,7 @@
 @media (min-width: 768px) {
     .news {
         width: 18rem;
+        height: 20rem;
     }
 }
 

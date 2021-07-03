@@ -6,14 +6,6 @@ import Particles from "react-particles-js";
 import particleStyle from '../components/index/ParticleStyle'
 
 export default function InfoForEntrants() {
-    const linearTransition = {
-        height: '20vh',
-        background: '#308DE4 linear-gradient(0deg, rgba(48,141,228,1) 0%, rgba(255,255,255,1) 100%)',
-    }
-    const linearTransitionUp = {
-        height: '10vh',
-        background: '#308DE4 linear-gradient(180deg, rgba(48,141,228,1) 0%, rgba(255,255,255,1) 100%)',
-    }
     const background = {
         position: 'absolute',
         display: 'block',
@@ -43,12 +35,12 @@ export default function InfoForEntrants() {
                 <Particles style={background}
                            params={particleStyle}
                 />
-                <div style={linearTransitionUp}/>
+                <div className='linearTransitionUp'/>
                 <ScienceList/>
 
 
 
-                <div style={linearTransition}/>
+                <div className='linearTransition'/>
             </div>
             <Footer/>
         </div>
