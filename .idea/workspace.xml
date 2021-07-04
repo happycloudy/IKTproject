@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d4e1b011-95a9-4583-84af-5982b1b3cec9" name="Default Changelist" comment="fixed styles in index, students, teachers pages">
+    <list default="true" id="d4e1b011-95a9-4583-84af-5982b1b3cec9" name="Default Changelist" comment="fixed footer style">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/general/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/general/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/index/NewsBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/index/NewsBlock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/teachers/Tutors.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/teachers/Tutors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/teachers.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/teachers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/index.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/teachers.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/teachers.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625270940282</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fixed footer style">
+      <created>1625359327460</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1625359327460</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +157,7 @@
     <MESSAGE value="teachers page completed (need to fix some styles)" />
     <MESSAGE value="fixed index and news page" />
     <MESSAGE value="fixed styles in index, students, teachers pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed styles in index, students, teachers pages" />
+    <MESSAGE value="fixed footer style" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed footer style" />
   </component>
 </project>

@@ -1,9 +1,19 @@
 .teachers {
-    /*margin-bottom: 3vh;*/
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.particleBackground {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background-color: white;
 }
 
 .wrap {
@@ -14,11 +24,13 @@
     justify-content: center;
     align-items: center;
 }
+
 .card {
     width: 15rem;
     height: 17rem;
     perspective: 1000px;
 }
+
 .front, .back {
     position: absolute;
     width: 100%;
@@ -32,18 +44,26 @@
     backface-visibility: hidden;
     border-radius: 10px;
 }
+
 .front {
     background-color: #fff;
 }
+
 .back {
     background-color: #BDBDBD;
     transform: rotateY(180deg);
     color: white
 }
-.card:hover .front {transform: rotateY(180deg);}
-.card:hover .back {transform: rotateY(360deg);}
 
-.frontCard{
+.card:hover .front {
+    transform: rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: rotateY(360deg);
+}
+
+.frontCard {
     border: none;
     border-radius: 10px;
     background-color: #308DE4;
@@ -51,7 +71,7 @@
     color: white;
 }
 
-.backCard{
+.backCard {
     background-color: #308DE4;
     font-size: 0.8rem;
 }

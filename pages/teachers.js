@@ -24,10 +24,7 @@ export default function Teachers() {
 
             <div style={bodyStyle}>
                 <div className='linearTransitionUp'/>
-                <Particles
-                    className='particlesBackground'
-                    params={particleStyle}
-                />
+
                 <Tutors/>
                 <div className='linearTransition'/>
             </div>

@@ -152,16 +152,6 @@
     transform: scale(1.05, 1.05);
 }
 
-.particles {
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    height: 100%;
-    width: 100%;
-    background-color: white;
-}
 
 .allNewsLink {
     text-decoration: none;

@@ -3,6 +3,8 @@ import CardFlip from './Card'
 import styles from '../../styles/teachers.module.css'
 import {useEffect, useState} from "react";
 import axios from "axios";
+import particleStyle from "../index/ParticleStyle";
+import Particles from "react-particles-js";
 
 export default function Tutors(props) {
     const [teachers, setTeachers] = useState([])
@@ -18,7 +20,6 @@ export default function Tutors(props) {
 
     return (
         <Container>
-
             <div className='d-flex justify-content-center'>
                 <h3>
                     Преподаватели
@@ -26,10 +27,14 @@ export default function Tutors(props) {
             </div>
 
             <Row className={styles.teachers}>
+                {/*<Particles*/}
+                {/*    className={styles.particleBackground}*/}
+                {/*    params={particleStyle}*/}
+                {/*/>*/}
                 {
                     teachers.map((teacher, id) =>
-                        <Col>
-                            <CardFlip key={id}
+                        <Col key={id}>
+                            <CardFlip
                                       name={teacher.Name}
                                       position={teacher.Position}
                                       biography={teacher.Biography}

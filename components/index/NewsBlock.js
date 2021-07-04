@@ -33,7 +33,7 @@ export default function NewsBlock() {
     return (
         <div className={styles.newsWrap}>
             <Particles params={ParticleStyle}
-                       className={styles.particles}
+                       className='particlesBackground'
             />
             <Jumbotron style={jumboStyle} fluid className="mb-0 mt-0 pt-3 pb-3">
                 <Container className="pb-3 pt-3" style={containerStyle}>
