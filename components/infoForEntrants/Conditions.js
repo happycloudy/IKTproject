@@ -1,7 +1,7 @@
 import React from 'react';
 import {Row, Col} from "react-bootstrap";
 import {Fade} from 'react-reveal'
-
+import styles from '../../styles/Condition.module.css'
 const Conditions = () => {
     let color = 'white'
     let BlockStyle = {
@@ -156,7 +156,7 @@ const Conditions = () => {
                         <p style={{textAlign:'center'}}>(при поступлении в 2021 году общий конкурс на оба направления подготовки)</p>
                         <Row>
                             <Col>
-                                <table border='1' bordercolor='white' style={{textAlign:'center',margin:'auto'}}>
+                                <table border='1' bordercolor='white' className={styles.table}>
                                     <tr>
                                         <th>
                                             Код и направление подготовки

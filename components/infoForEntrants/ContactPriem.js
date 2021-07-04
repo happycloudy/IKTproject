@@ -1,6 +1,7 @@
 import React from 'react';
 import {Row, Col} from "react-bootstrap";
 import {Fade} from 'react-reveal'
+import styles from '../../styles/ContactPriem.module.css'
 
 const ContactPriem = () => {
     let color = 'white'
@@ -18,7 +19,7 @@ const ContactPriem = () => {
             <div style={BlockStyle} className='mt-5 pl-5 pr-5'>
                 <Row>
                     <Col>
-                        <table border='1' bordercolor='white' style={{textAlign:'center',margin:'auto'}}>
+                        <table border='1' bordercolor='white' className={styles.tableadress}>
                             <tr>
                                 <th>
                                     Часы работы:

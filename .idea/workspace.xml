@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d4e1b011-95a9-4583-84af-5982b1b3cec9" name="Default Changelist" comment="fixed footer style">
+    <list default="true" id="d4e1b011-95a9-4583-84af-5982b1b3cec9" name="Default Changelist" comment="'ended with Index' + added animation to btn 'MoreInfo'">
+      <change afterPath="$PROJECT_DIR$/styles/Condition.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/ContactPriem.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/index/NewsBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/index/NewsBlock.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/teachers/Tutors.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/teachers/Tutors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/teachers.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/teachers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/index.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/teachers.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/teachers.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/infoForEntrants/Conditions.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/infoForEntrants/Conditions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/infoForEntrants/ContactPriem.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/infoForEntrants/ContactPriem.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +80,7 @@
       <option name="presentableId" value="Default" />
       <updated>1624750139789</updated>
       <workItem from="1624750143663" duration="5894000" />
+      <workItem from="1625411934583" duration="2646000" />
     </task>
     <task id="LOCAL-00001" summary="ended with Index">
       <created>1624753815969</created>

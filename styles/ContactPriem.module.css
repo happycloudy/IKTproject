@@ -1,0 +1,12 @@
+.tableadress {
+    text-align: center;
+    margin: auto;
+    font-size: 1.2rem;
+}
+@media(max-width: 780px) {
+    .tableadress {
+
+        font-size: 3vw;
+
+    }
+}
