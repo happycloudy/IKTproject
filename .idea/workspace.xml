@@ -1,34 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d4e1b011-95a9-4583-84af-5982b1b3cec9" name="Default Changelist" comment="fixed index and news page">
-      <change afterPath="$PROJECT_DIR$/styles/students.module.css" afterDir="false" />
+    <list default="true" id="d4e1b011-95a9-4583-84af-5982b1b3cec9" name="Default Changelist" comment="fixed styles in index, students, teachers pages">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Diplomases/Diplomas.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/diplomases/Diplomas.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Diplomases/DiplomasDirection.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/diplomases/DiplomasDirection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/index/News.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/index/News.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/infoForStudents/Bachelor.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/infoForStudents/Bachelor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/infoForStudents/DiplomsUndergraduate.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/infoForStudents/DiplomsUndergraduate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/infoForStudents/Magisters.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/infoForStudents/Magisters.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/infoForStudents/student.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/infoForStudents/student.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/science/Devs.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/science/Devs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/science/ScienceLectures.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/science/ScienceLectures.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/teachers/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/teachers/Card.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/teachers/Tutors.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/teachers/Tutors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/about.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/conferencesAndStateGrants.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/conferencesAndStateGrants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/diplomas.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/diplomas.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/graduate.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/graduate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/grants.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/grants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/infoForEntrants.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/infoForEntrants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/infoForStudents.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/infoForStudents.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/news.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/news.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/olympic.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/olympic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/publicationsAndStudentsWorks.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/publicationsAndStudentsWorks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/teachers.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/teachers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/index.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/teachers.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/teachers.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/general/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/general/Header.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625263118944</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fixed styles in index, students, teachers pages">
+      <created>1625270940282</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1625270940282</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,6 +143,7 @@
     <MESSAGE value="fixed import particles settings" />
     <MESSAGE value="teachers page completed (need to fix some styles)" />
     <MESSAGE value="fixed index and news page" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed index and news page" />
+    <MESSAGE value="fixed styles in index, students, teachers pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed styles in index, students, teachers pages" />
   </component>
 </project>

@@ -1,5 +1,5 @@
 import {Navbar, Nav, NavDropdown} from 'react-bootstrap'
-import {Fade} from 'react-reveal'
+import Link from 'next/link'
 
 
 export default function Header() {
@@ -25,37 +25,72 @@ export default function Header() {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
-                        <Nav.Link className="text-white" href="/">Главная</Nav.Link>
+                        <Link href="/" passHref>
+                            <Nav.Link className="text-white" >
+                                Главная
+                            </Nav.Link>
+                        </Link>
                         <NavDropdown title={
                             <span className="text-white my-auto">Информация</span>
                         }
                                      id="collasible-nav-dropdown"
                         >
-                            <NavDropdown.Item style={{color: "#308DE4"}}
-                                              href="/grants">
-                                О грантах
-                            </NavDropdown.Item>
-                            <NavDropdown.Item style={{color: "#308DE4"}}
-                                              href="/olympic">
-                                Олимпиады
-                            </NavDropdown.Item>
-                            <NavDropdown.Item style={{color: "#308DE4"}}
-                                              href="/conferencesAndStateGrants">
-                                Конференции
-                                и<br/>гос. гранты
-                            </NavDropdown.Item>
-                            <NavDropdown.Item style={{color: "#308DE4"}}
-                                              href="/publicationsAndStudentsWorks">
-                                Публикации
-                                и<br/>студенческие работы
-                            </NavDropdown.Item>
+                            <Link href="/grants" passHref>
+                                <NavDropdown.Item style={{color: "#308DE4"}}>
+                                    О грантах
+                                </NavDropdown.Item>
+                            </Link>
+
+                            <Link href="/olympic" passHref>
+                                <NavDropdown.Item style={{color: "#308DE4"}}>
+                                    Олимпиады
+                                </NavDropdown.Item>
+                            </Link>
+
+                            <Link href="/conferencesAndStateGrants" passHref>
+                                <NavDropdown.Item style={{color: "#308DE4"}}>
+                                    Конференции
+                                    и<br/>гос. гранты
+                                </NavDropdown.Item>
+                            </Link>
+
+                            <Link href="/publicationsAndStudentsWorks" passHref>
+                                <NavDropdown.Item style={{color: "#308DE4"}}>
+                                    Публикации
+                                    и<br/>студенческие работы
+                                </NavDropdown.Item>
+                            </Link>
                         </NavDropdown>
 
-                        <Nav.Link className="text-white" href="/infoForStudents">Студентам</Nav.Link>
-                        <Nav.Link className="text-white" href="/graduate">Аспирантам</Nav.Link>
-                        <Nav.Link className="text-white" href="/infoForEntrants">Абитуриентам</Nav.Link>
-                        <Nav.Link className="text-white" href="/teachers">Преподаватели</Nav.Link>
-                        <Nav.Link className="text-white" href="/about">О кафедре</Nav.Link>
+
+                        <Link href="/infoForStudents" passHref>
+                            <Nav.Link className="text-white">
+                                Студентам
+                            </Nav.Link>
+                        </Link>
+
+                        <Link href="/graduate" passHref>
+                            <Nav.Link className="text-white" >
+                                Аспирантам
+                            </Nav.Link>
+                        </Link>
+
+                        <Link href="/infoForEntrants" passHref>
+                            <Nav.Link className="text-white">
+                                Абитуриентам
+                            </Nav.Link>
+                        </Link>
+
+                        <Link href="/teachers" passHref>
+                            <Nav.Link className="text-white">
+                                Преподаватели
+                            </Nav.Link>
+                        </Link>
+                        <Link href="/about" passHref>
+                            <Nav.Link className="text-white">
+                                О кафедре
+                            </Nav.Link>
+                        </Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
