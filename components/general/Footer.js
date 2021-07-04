@@ -1,12 +1,9 @@
 import {Container, Col, Row} from 'react-bootstrap'
 
-const FooterStyle = {
-    background: 'linear-gradient(180deg, rgba(48,141,228,1) 0%, rgba(15,76,134,0.8) 100%);'
-}
 
 export default function Footer(props) {
     return (
-        <div style={FooterStyle}>
+        <div className='footer'>
             <div id="wrap">
                 <section id="main">
                     <Container>
