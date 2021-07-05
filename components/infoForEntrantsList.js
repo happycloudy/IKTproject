@@ -5,7 +5,6 @@ import React from "react";
 import KafedraInfo from './infoForEntrants/kafedraInfo'
 import Salary from './infoForEntrants/Salary'
 import WhatToStudy from './infoForEntrants/WhatToStudy'
-import Hackaton from './infoForEntrants/Hackaton'
 import Conditions from './infoForEntrants/Conditions'
 import ContactPriem from './infoForEntrants/ContactPriem'
 import ConditionsGraduate from "./infoForEntrants/ConditionsGraduate";
@@ -29,10 +28,8 @@ export default function ScienceInfo(props) {
                         <Salary/>
                         <h2 className='mt-5'>Наши студенты изучают</h2>
                         <WhatToStudy/>
-                        <Hackaton/>
                         <h2 className='mt-5'>Условия приема на Бакалавриат на 2021/2022 учебный год</h2>
                         <Conditions/>
-
                         <ContactPriem/>
                         <h2 className='mt-5'>Условия приема в Магистратуру на 2020/2021 учебный год</h2>
                         <ConditionsGraduate/>

@@ -31,13 +31,13 @@ export default function Header() {
                             </Nav.Link>
                         </Link>
                         <NavDropdown title={
-                            <span className="text-white my-auto">Информация</span>
+                            <span className="text-white my-auto">Наука</span>
                         }
                                      id="collasible-nav-dropdown"
                         >
                             <Link href="/grants" passHref>
                                 <NavDropdown.Item style={{color: "#308DE4"}}>
-                                    О грантах
+                                    Гранты
                                 </NavDropdown.Item>
                             </Link>
 
@@ -50,14 +50,12 @@ export default function Header() {
                             <Link href="/conferencesAndStateGrants" passHref>
                                 <NavDropdown.Item style={{color: "#308DE4"}}>
                                     Конференции
-                                    и<br/>гос. гранты
                                 </NavDropdown.Item>
                             </Link>
 
                             <Link href="/publicationsAndStudentsWorks" passHref>
                                 <NavDropdown.Item style={{color: "#308DE4"}}>
                                     Публикации
-                                    и<br/>студенческие работы
                                 </NavDropdown.Item>
                             </Link>
                         </NavDropdown>
