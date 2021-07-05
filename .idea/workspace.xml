@@ -1,12 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d4e1b011-95a9-4583-84af-5982b1b3cec9" name="Default Changelist" comment="'ended with Index' + added animation to btn 'MoreInfo'">
-      <change afterPath="$PROJECT_DIR$/styles/Condition.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/ContactPriem.module.css" afterDir="false" />
+    <list default="true" id="d4e1b011-95a9-4583-84af-5982b1b3cec9" name="Default Changelist" comment="Fixed tables on &quot;Абитуриентам&quot;">
+      <change afterPath="$PROJECT_DIR$/components/infoForEntrants/ConditionsGraduate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/infoForEntrants/DocumentsGraduate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/infoForEntrants/GraduateEconomics.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/infoForEntrants/GraduateTech.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Documents/09.04.02_Economics.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Documents/09.04.02_Tech.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/conditionsGraduate.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/documentsGraduate.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/graduateEconomics.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/graduateTech.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/infoForEntrants/Conditions.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/infoForEntrants/Conditions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/infoForEntrants/ContactPriem.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/infoForEntrants/ContactPriem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/infoForEntrants/Hackaton.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/infoForEntrants/Hackaton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/infoForEntrants/Salary.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/infoForEntrants/Salary.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/infoForEntrants/WhatToStudy.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/infoForEntrants/WhatToStudy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/infoForEntrants/applyingInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/infoForEntrants/applyingInfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/infoForEntrants/kafedraInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/infoForEntrants/kafedraInfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/infoForEntrantsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/infoForEntrantsList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/infoForEntrants.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/infoForEntrants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/Condition.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/condition.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/ContactPriem.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/contactPriem.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +33,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="CSS File" />
       </list>
     </option>
@@ -53,6 +71,11 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/Documents" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -80,7 +103,7 @@
       <option name="presentableId" value="Default" />
       <updated>1624750139789</updated>
       <workItem from="1624750143663" duration="5894000" />
-      <workItem from="1625411934583" duration="2646000" />
+      <workItem from="1625411934583" duration="8925000" />
     </task>
     <task id="LOCAL-00001" summary="ended with Index">
       <created>1624753815969</created>
@@ -131,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625359327460</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Fixed tables on &quot;Абитуриентам&quot;">
+      <created>1625415905767</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1625415905767</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,6 +187,7 @@
     <MESSAGE value="fixed index and news page" />
     <MESSAGE value="fixed styles in index, students, teachers pages" />
     <MESSAGE value="fixed footer style" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed footer style" />
+    <MESSAGE value="Fixed tables on &quot;Абитуриентам&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed tables on &quot;Абитуриентам&quot;" />
   </component>
 </project>

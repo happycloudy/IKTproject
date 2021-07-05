@@ -1,6 +1,6 @@
 import React from 'react';
 import {Row, Col} from "react-bootstrap";
-import {Fade} from 'react-reveal'
+import Fade from 'react-reveal'
 
 const KafedraInfo = () => {
     let color = 'white'

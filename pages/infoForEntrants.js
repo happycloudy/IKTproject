@@ -32,9 +32,7 @@ export default function InfoForEntrants() {
             </Head>
             <Header/>
             <div style={bodyStyle}>
-                <Particles style={background}
-                           params={particleStyle}
-                />
+
                 <div className='linearTransitionUp'/>
                 <ScienceList/>
 
@@ -46,3 +44,7 @@ export default function InfoForEntrants() {
         </div>
     )
 }
+
+//<Particles style={background}
+//                            params={particleStyle}
+//                 />

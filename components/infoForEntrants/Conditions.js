@@ -1,7 +1,8 @@
 import React from 'react';
 import {Row, Col} from "react-bootstrap";
-import {Fade} from 'react-reveal'
-import styles from '../../styles/Condition.module.css'
+import {Fade,Roll} from 'react-reveal'
+import styles from '../../styles/condition.module.css'
+
 const Conditions = () => {
     let color = 'white'
     let BlockStyle = {
@@ -43,8 +44,8 @@ const Conditions = () => {
                             </ul>
                         </p>
                         <h5 className='mt-5'>Документы, необходимые для поступления:</h5>
-                        <p style={{textAlign:'left'}} >
-                            <ul>
+                        <p>
+                            <ul style={{textAlign:'left'}} >
                                 <li>
                                     заявление о приеме
                                 </li>

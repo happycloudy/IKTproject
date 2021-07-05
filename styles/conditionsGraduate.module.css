@@ -1,0 +1,27 @@
+.blockStyle  {
+    background-color: #308DE4;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    padding-bottom:5vh;
+    padding-top:1vh;
+}
+.table {
+    text-align: center;
+    margin: auto;
+    font-size: 1.2rem;
+}
+@media(max-width: 1200px) {
+    .table {
+
+        font-size: 1.5vw;
+
+    }
+}
+@media(max-width: 770px) {
+    .table {
+
+        font-size: 1.4vw;
+
+    }
+}

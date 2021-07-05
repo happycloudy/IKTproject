@@ -1,7 +1,7 @@
 import React from 'react';
 import {Row, Col} from "react-bootstrap";
-import {Fade} from 'react-reveal'
-import styles from '../../styles/ContactPriem.module.css'
+import {Fade,Roll} from 'react-reveal'
+import styles from '../../styles/contactPriem.module.css'
 
 const ContactPriem = () => {
     let color = 'white'
@@ -15,7 +15,7 @@ const ContactPriem = () => {
 
     }
     return (
-        <Fade left>
+        <Roll bottom>
             <div style={BlockStyle} className='mt-5 pl-5 pr-5'>
                 <Row>
                     <Col>
@@ -58,7 +58,7 @@ const ContactPriem = () => {
                     </Col>
                 </Row>
             </div>
-        </Fade>
+        </Roll>
     );
 }
 
