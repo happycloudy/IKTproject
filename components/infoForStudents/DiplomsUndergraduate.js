@@ -28,19 +28,10 @@ class DiplomsUndergraduate extends React.Component {
     }
 
     render() {
-        let BlockStyle = {
-            backgroundColor: '#308DE4',
-            textAlign: 'center',
-            color: 'white',
-            borderRadius: '20px',
-            paddingBottom: '5vh',
-            paddingTop: '5vh'
-        }
         return (
-            <div style={BlockStyle} className='mt-2 d-flex justify-content-center'>
-
+            <div className='mt-2 d-flex justify-content-center align-items-center flex-column blockStyle'>
                 {this.state.years.map((year, id) =>
-                    <Row style={{width:'100%'}} key={id}>
+                    <Row style={{width:'100%', marginTop: '1vh'}} key={id}>
                         <Col>
                             <Accordion>
                                 <Card>
@@ -53,6 +44,7 @@ class DiplomsUndergraduate extends React.Component {
                                         <Card.Body>
                                             <DiplomasDirection directions={this.state.diplomasDirections}
                                                                diplomas={this.state.diplomas}
+                                                               year={year.Year}
                                             />
                                         </Card.Body>
                                     </Accordion.Collapse>

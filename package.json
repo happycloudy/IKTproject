@@ -4,8 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "node app",
-    "build": "next build",
-    "start": "next start",
+    "build:server": "",
+    "build:next": "next build",
+    "build": "npm run build:next && npm run build:server",
+    "start": "NODE_ENV=production node dist/index.js",
     "nodemon": "npx nodemon app.js"
   },
   "dependencies": {

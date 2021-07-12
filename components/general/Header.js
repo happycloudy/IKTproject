@@ -30,8 +30,21 @@ export default function Header() {
                                 Главная
                             </Nav.Link>
                         </Link>
+
+                        <Link href="/infoForStudents" passHref>
+                            <Nav.Link className="text-white">
+                                Студентам
+                            </Nav.Link>
+                        </Link>
+
+                        <Link href="/infoForEntrants" passHref>
+                            <Nav.Link className="text-white">
+                                Абитуриентам
+                            </Nav.Link>
+                        </Link>
+
                         <NavDropdown title={
-                            <span className="text-white my-auto">Информация</span>
+                            <span className="text-white my-auto">Наука</span>
                         }
                                      id="collasible-nav-dropdown"
                         >
@@ -47,7 +60,7 @@ export default function Header() {
                                 </NavDropdown.Item>
                             </Link>
 
-                            <Link href="/conferencesAndStateGrants" passHref>
+                            <Link href="/conferences" passHref>
                                 <NavDropdown.Item style={{color: "#308DE4"}}>
                                     Конференции
                                     и<br/>гос. гранты
@@ -62,30 +75,12 @@ export default function Header() {
                             </Link>
                         </NavDropdown>
 
-
-                        <Link href="/infoForStudents" passHref>
-                            <Nav.Link className="text-white">
-                                Студентам
-                            </Nav.Link>
-                        </Link>
-
-                        <Link href="/graduate" passHref>
-                            <Nav.Link className="text-white" >
-                                Аспирантам
-                            </Nav.Link>
-                        </Link>
-
-                        <Link href="/infoForEntrants" passHref>
-                            <Nav.Link className="text-white">
-                                Абитуриентам
-                            </Nav.Link>
-                        </Link>
-
                         <Link href="/teachers" passHref>
                             <Nav.Link className="text-white">
                                 Преподаватели
                             </Nav.Link>
                         </Link>
+
                         <Link href="/about" passHref>
                             <Nav.Link className="text-white">
                                 О кафедре

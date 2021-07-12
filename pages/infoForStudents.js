@@ -1,7 +1,7 @@
 import Header from '../components/general/Header'
 import Footer from '../components/general/Footer'
 import Head from 'next/head'
-import InfoList from "../components/InfoList";
+import StudentsInfo from "../components/StudentsInfo";
 import Particles from "react-particles-js";
 import particleStyle from '../components/index/ParticleStyle'
 
@@ -19,7 +19,7 @@ export default function InfoForStudents() {
     }
     const bodyStyle = {
         height: '100%',
-        backgroundRepeat: 'no-repeat',    /*background-image: linear-gradient(rgb(12, 97, 33),rgb(104, 145, 162));*/
+        backgroundRepeat: 'no-repeat',
         position: 'relative',
         background: "transparent"
     }
@@ -37,7 +37,7 @@ export default function InfoForStudents() {
                            params={particleStyle}
                 />
                 <div className='linearTransitionUp'/>
-                <InfoList/>
+                <StudentsInfo/>
                 <div className='linearTransition'>
                 </div>
             </div>

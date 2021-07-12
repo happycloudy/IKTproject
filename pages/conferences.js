@@ -2,8 +2,7 @@ import Header from '../components/general/Header'
 import Footer from '../components/general/Footer'
 import Head from 'next/head'
 import Particles from "react-particles-js";
-import Publications from "../components/publicationsAndStudentsWorks/Publications";
-import StudentsWorks from "../components/publicationsAndStudentsWorks/StudentsWorks";
+import Conferences from "../components/сonferences/Conferences";
 import particleStyle from '../components/index/ParticleStyle'
 
 
@@ -20,7 +19,7 @@ export default function Grants() {
     }
     const bodyStyle= {
         height: '100%',
-        backgroundRepeat: 'no-repeat',    /*background-image: linear-gradient(rgb(12, 97, 33),rgb(104, 145, 162));*/
+        backgroundRepeat: 'no-repeat',
         position: 'relative',
         background: "transparent"
     }
@@ -29,7 +28,7 @@ export default function Grants() {
     return (
         <div>
             <Head>
-                <title>Публикации и студенческие работы</title>
+                <title>Конференции и гос. гранты</title>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
             <Header/>
@@ -39,8 +38,7 @@ export default function Grants() {
                 />
                 <div className='linearTransitionUp'>
                 </div>
-                <Publications/>
-                <StudentsWorks/>
+                <Conferences/>
                 <div className='linearTransition'>
                 </div>
             </div>

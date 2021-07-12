@@ -1,5 +1,6 @@
 const express = require('express')
 const next = require('next')
+const path = require('path')
 
 const bodyParser = require('body-parser')
 
@@ -15,9 +16,14 @@ app.prepare().then(() => {
     const server = express()
     server.use(bodyParser.urlencoded({ extended: false }))
     server.use(bodyParser.json());
+    server.use('/introduction',express.static(__dirname + '/introduction'))
 
     server.get('*', (req, res) => {
-        return handle(req, res)
+        if(req.path === '/introduction'){
+            res.sendFile(path.join(__dirname + '/introduction/content/index.html'))
+        }else{
+            return handle(req, res)
+        }
     })
 
     server.listen(port, (err) => {

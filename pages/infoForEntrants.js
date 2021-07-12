@@ -1,7 +1,7 @@
 import Header from '../components/general/Header'
 import Footer from '../components/general/Footer'
 import Head from 'next/head'
-import ScienceList from '../components/infoForEntrantsList'
+import ScienceList from '../components/InfoForEntrantsList'
 import Particles from "react-particles-js";
 import particleStyle from '../components/index/ParticleStyle'
 

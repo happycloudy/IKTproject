@@ -6,7 +6,8 @@ import axios from "axios";
 import Fade from 'react-reveal'
 
 const DirectionsBlock = () => {
-    const [directions, setDirections] = useState([])
+    const [firstDirections, setFirstDirections] = useState({})
+    const [secondDirections, setSecondDirections] = useState([])
 
     const fetch = async () => {
         return (await axios.get('http://localhost:1337/index')).data
@@ -14,7 +15,12 @@ const DirectionsBlock = () => {
 
     useEffect(async () => {
         let directions = await fetch()
-        setDirections(directions.Direction)
+        await setFirstDirections({
+            DirectionNumber: directions.FirstDirection.DirectionNumber,
+            Direction: directions.FirstDirection.Direction,
+            WhatLearning: directions.FirstDirection.WhatLearning
+        })
+        setSecondDirections(directions.SecondDirection)
     }, [])
 
 
@@ -29,8 +35,20 @@ const DirectionsBlock = () => {
 
                 <Container className='mt-5'>
                     <Row>
+                        <Col>
+                            <Direction
+                                direction={firstDirections}/>
+                        </Col>
+                    </Row>
+
+                    <Row>
+                        <Col className='text-center text-white mt-3'>
+                            <h4>После 2-го курса вам следует выбрать:</h4>
+                        </Col>
+                    </Row>
+                    <Row>
                         {
-                            directions.map(direction =>
+                            secondDirections.map(direction =>
                                 <Col key={direction.id}>
                                     <Direction
                                         direction={direction}
@@ -40,11 +58,7 @@ const DirectionsBlock = () => {
                         }
                     </Row>
                 </Container>
-                <div className={styles.moreInfo}>
-                    <Button variant='info' href='http://localhost:3000/infoForEntrants' className={styles.moreInfoButton}>
-                        Узнать больше о поступление
-                    </Button>
-                </div>
+
             </div>
         </Fade>
     );

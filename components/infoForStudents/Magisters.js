@@ -105,9 +105,7 @@ class Magisters extends React.Component {
         return (
             <div style={BlockStyle} className='mt-2 pt-2'>
                 <Row className='mt-2'>
-                    <Col>
-                        Магистратура
-                    </Col>
+                    <Col></Col>
                 </Row>
                 <Row className='mt-4'>
                     <Col>

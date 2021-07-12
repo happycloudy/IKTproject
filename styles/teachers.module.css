@@ -5,17 +5,6 @@
     flex-wrap: wrap;
 }
 
-.particleBackground {
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    height: 100%;
-    width: 100%;
-    background-color: white;
-}
-
 .wrap {
     margin: 12vh;
     left: 0;

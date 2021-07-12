@@ -37,7 +37,7 @@ export default function NewsBlock() {
             />
             <Jumbotron style={jumboStyle} fluid className="mb-0 mt-0 pt-3 pb-3">
                 <Container className="pb-3 pt-3" style={containerStyle}>
-                    <h2 className="mb-3" style={{color: 'white', textAlign: 'center'}}>Новости</h2>
+                    <h3 className="mb-3" style={{color: 'white', textAlign: 'center'}}>Новости</h3>
                     <Row>
                         {
                             news.map((news, id) =>

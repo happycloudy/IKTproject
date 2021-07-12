@@ -2,18 +2,10 @@ import Header from '../components/general/Header'
 import Footer from '../components/general/Footer'
 import Head from 'next/head'
 import Particles from "react-particles-js";
-import Olympics from "../components/olympics/olympics";
-
+import Olympics from "../components/olympics/Olympics";
+import particleStyle from '/components/index/ParticleStyle'
 
 export default function Olympic() {
-    const linearTransition = {
-        height: '20vh',
-        background: '#308DE4 linear-gradient(0deg, rgba(48,141,228,1) 0%, rgba(255,255,255,1) 100%)'
-    }
-    const linearTransitionUp = {
-        height: '10vh',
-        background: '#308DE4 linear-gradient(180deg, rgba(48,141,228,1) 0%, rgba(255,255,255,1) 100%)'
-    }
     const background = {
         position: 'absolute',
         display: 'block',

@@ -55,23 +55,9 @@ class Bachelor extends React.Component {
     }
 
     render() {
-        let color = 'white'
-        let BlockStyle = {
-            backgroundColor: '#308DE4',
-            textAlign: 'center',
-            color: color,
-            borderRadius: '20px',
-            paddingBottom: '5vh'
-        }
-
         return (
-            <div style={BlockStyle} className='mt-2'>
-                <Row className='mt-2 pt-2'>
-                    <Col>
-                        Бакалавриат
-                    </Col>
-                </Row>
-                <Row className='mt-4'>
+            <div className='mt-2 blockStyle'>
+                <Row >
                     <Col>
                         <Button variant='light' onClick={this.handleShowBachelorSemesters}
                                 className={styles.clickableButton}>

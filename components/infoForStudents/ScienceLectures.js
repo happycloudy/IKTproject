@@ -1,9 +1,7 @@
 import {Col, Row} from 'react-bootstrap'
 import styles from '../../styles/students.module.css'
-import {Fade} from 'react-reveal'
 
-
-export default function Students(props) {
+export default function Information(props) {
     let maxHeightStyle = {
         maxHeight: '80%',
         display: 'flex',
@@ -11,17 +9,16 @@ export default function Students(props) {
         alignItems: 'center'
     }
     return (
-        <Row style={{background: '#308DE4', color: 'white', borderRadius: '30px'}}>
+
+        <Row className='mt-2' style={{background: '#308DE4', color: 'white', borderRadius: '30px'}}>
+            <Col style={maxHeightStyle}>
+                <img className={styles.imgStudent}
+                     src={props.image}/>
+            </Col>
             <Col style={maxHeightStyle}>
                 <div>
                     {props.text}
                 </div>
-            </Col>
-            <Col style={maxHeightStyle}>
-                <Fade>
-                    <img className={styles.imgStudent}
-                         src={props.image}/>
-                </Fade>
             </Col>
         </Row>
     )

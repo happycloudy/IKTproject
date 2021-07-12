@@ -3,7 +3,7 @@ import styles from '../../styles/students.module.css'
 import {Fade} from 'react-reveal'
 
 
-export default function Students(props) {
+export default function Aspirants(props) {
     let maxHeightStyle = {
         maxHeight: '80%',
         display: 'flex',
