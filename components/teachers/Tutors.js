@@ -33,6 +33,7 @@ export default function Tutors(props) {
                                       position={teacher.Position}
                                       biography={teacher.Biography}
                                       img={teacher.Avatar ? 'http://localhost:1337' + teacher.Avatar.url : null}
+                                      link={teacher.Link}
                             />
                         </Col>
                     )

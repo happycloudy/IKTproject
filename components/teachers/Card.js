@@ -30,6 +30,14 @@ export default function TutorCard(props) {
                                 <b>{props.position}</b>
                                 <br/>
                                 {props.biography}
+                                <br/>
+                                {
+                                    props.link?
+                                        <Card.Link href={props.link} style={{color: 'white', textDecoration: 'underline'}}>
+                                            Ссылка на официальный сайт РХТУ
+                                        </Card.Link>:
+                                        null
+                                }
                             </Card.Text>
                         </Card.Body>
                     </Card>

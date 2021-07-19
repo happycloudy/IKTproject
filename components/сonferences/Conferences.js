@@ -23,6 +23,7 @@ export default  function Conferences() {
         let conferences = await fetchConferences()
         await conferences.sort((a, b) => a.Year < b.Year ? 1 : -1)
         setConferences(conferences)
+
         let years = await getYears(conferences)
         setYears(years)
     }, [])

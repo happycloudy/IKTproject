@@ -20,7 +20,7 @@ export default function Grants() {
     }
     const bodyStyle= {
         height: '100%',
-        backgroundRepeat: 'no-repeat',    /*background-image: linear-gradient(rgb(12, 97, 33),rgb(104, 145, 162));*/
+        backgroundRepeat: 'no-repeat',
         position: 'relative',
         background: "transparent"
     }
@@ -40,7 +40,6 @@ export default function Grants() {
                 <div className='linearTransitionUp'>
                 </div>
                 <Publications/>
-                <StudentsWorks/>
                 <div className='linearTransition'>
                 </div>
             </div>

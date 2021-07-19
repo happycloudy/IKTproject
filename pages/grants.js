@@ -2,7 +2,7 @@ import Header from '../components/general/Header'
 import Footer from '../components/general/Footer'
 import Head from 'next/head'
 import Particles from "react-particles-js";
-import InfoGrant from "../components/infoGrants/InfoGrant";
+import InfoGrant from "../components/grants/InfoGrant";
 import particleStyle from '../components/index/ParticleStyle'
 
 export default function Grants() {
@@ -28,7 +28,7 @@ export default function Grants() {
                 <div className='linearTransitionUp'>
                 </div>
                 <InfoGrant/>
-                <div className='linearTransition'>
+                <div className='linearTransition '>
                 </div>
             </div>
             <Footer/>

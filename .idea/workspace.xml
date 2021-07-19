@@ -1,134 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d4e1b011-95a9-4583-84af-5982b1b3cec9" name="Default Changelist" comment="'ended with Index' + added animation to btn 'MoreInfo'">
-      <change afterPath="$PROJECT_DIR$/components/infoForStudents/Graduate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/infoForStudents/GraduateList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/infoGrants/Grant.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/publicationsAndStudentsWorks/Publication.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/publicationsAndStudentsWorks/PublicationAndStudentsWorksModal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/publicationsAndStudentsWorks/StudentsWork.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/сonferences/Conference.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/сonferences/Conferences.js" afterDir="false" />
+    <list default="true" id="d4e1b011-95a9-4583-84af-5982b1b3cec9" name="Default Changelist" comment="release ver (some other push)">
+      <change afterPath="$PROJECT_DIR$/components/grants/GrantsAccordion.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/InfoList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/StudentsInfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/diplomases/DiplomasDirection.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/diplomases/DiplomasDirection.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/general/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/general/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/graduate/aspirants.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/infoForStudents/Aspirants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/graduate/diploms.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/infoForStudents/Diploms.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/graduateList.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/index/Direction.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/index/Direction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/index/DirectionsBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/index/DirectionsBlock.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/index/NewsBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/index/NewsBlock.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/infoForEntrantsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/InfoForEntrantsList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/infoForStudents/Bachelor.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/infoForStudents/Bachelor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/infoForStudents/DiplomsUndergraduate.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/infoForStudents/DiplomsUndergraduate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/infoForStudents/Magisters.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/infoForStudents/Magisters.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/infoForStudents/student.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/infoForStudents/student.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/infoGrants/infoGrant.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/infoGrants/InfoGrant.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/-4G12x5mTb245Tn4_OjBdCGjUwcT-h-9E.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/-q-ioAaS3lIQ_dlm_zGDa-AyN5yb1vaPz.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/0kes-wJkQFbfHibx_8MophohgA7mU2bZK.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/0t0xm-UxJH8nMGNK_KipgJzzl2nZ09fEB.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/14FVscKV0Vt9ex-b_oLgYnTdYxNivfC_c.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/1SEqBUSp1GcqSO8a_NTGpzV0nOO9z9xIN.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/25isW72BmqVDqrdI_transcoded-fYlWG1ORw6sED8xD-11redred.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/2OVoTS_qEf8WfOEb_bc8GbpoO5ao31fpD.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/51UsRxYs2-r-y_RU_ohsoty5hfV5VUm7T.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/61yCJOWWi73iQYPu_transcoded-mBQAZdw7yCoudj6v-rththth.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/63iqaeIFhgwpuSSD_eyOo5Wd3IyOklfAC.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/6MyoPKbe12X4Xire_TcZeqsp_AeZq2S0a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/7NNyIF51mewDzFCF_mountains.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/7QgaLKr6_dcz6LCQ_rWmhdfDb_8PWEtt2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/A072nwadDicZTKWy_227_full.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/AcOSdbIcZIe1-pOZ_y4b49xZ3Xz383aLA.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/BBsSQ5ija2fZUC3r_Yg5VUf2USHkHwzKz.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/BCEUR4yvryXnGUIw_kZQ5Q9d4cvxFDpOU.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/BD11aMLGvLDd-98s_185_full.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/C-bz3mhmi9wqAc9X_111_full.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/Co0exHXErDzQl71l_Xps6PRx_QG0p-uDD.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/D-m4E0dwWYcBsq9Z_175_full.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/E0djMQuS0EUwF843_189_full.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/EadU9DofeD5Cc6uO_tUVxdHlg62KhoNPG.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/EfTzBbbETcxize89_200_full.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/EyZG20aHHWLN4fOr_LoD5TM9UxeL9-40O.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/F1RSXt7l8GOBllsM_fMwgMaofXuwqLrp5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/FZf6ku58-m8oNGkA_small.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/GHlwfpryUv0Df-_H_MK2Re4MZrTEGW67j.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/GiCmPyr8TA6wXMp__Rm_OUFUEOAQtqL6A.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/H6-HbqV6ksC7S8oP_E6yQBbj5jHwYePeZ.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/IeX0WGjxN9VBHumk_154_full.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/L72_hae9_2pFNHPy_lCbyForwa6PdcmLP.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/MqWrdIcGycSrrDFd_202_full.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/Oyx1RDafErn28S9q_transcoded-fYlWG1ORw6sED8xD-11redred-00001.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/RwoH77bK-6FBI1Sr_OZO4cHOLz3Dz5tCc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/SGOQiQevdly3Aqa8_dhTnFiQdY0HnOHH1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/SQUxwubYk3nBIBfb_159_full.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/SQvs3dqYcpPxhgxU_hetCYJoC7m6ScQCx.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/STwW52uEOTDKX2mT_Rs86jhCN2Lc7Yz4m.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/StuqGSfuunYod5JV_117_full.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/TT9qf7rZ3w7QStbs_-oYKdK2n5FKFibBV.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/UaaKy_69k8biGOz3_RL9TxZJ8YtXXVX6u.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/WN8PsrT9GOV7PeAs_qK6JINnNSK4__GqB.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/WOcef7Rb4Q30PMmw_UdT3B8dmS96vx_fc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/_Nl4AlXcIOJfc-BR_118_full.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/_hb0mfTaEQLsqIbb_fk77s0xRj8xNDr4r.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/bx45FI5r3LbWxwwI_transcoded-mBQAZdw7yCoudj6v-rththth-00001.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/c7yYXfLN1llfX2rJ_119_full.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/dl_yqX5skpTCMAsS_ZrQf80Pp5GSFf8Wt.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/ei4cJpAsBQGtVjfx_ruoSTODJHbGmuLWi.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/fMSPtFNmQ_9tdlFG_3ec3XfO7lDd5Lhtp.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/gkYjQioL4-FToOwR_u-Co3iTcsM1zTTCt.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/iih6JtAz2Dl8pM_8_173_full.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/ikN5HQGgSkdseKyB_transcoded-lpE-cNgMus0temS7-Мультимедиа1-00001.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/jhGrfzmCSPFFFJ_w_3AMwlFJQqAA8d27O.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/jw1h1W7q0W1iolZF_epJXKbSlLO3KqAml.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/kE-k8xjrxNrJZLX8_xvyAdMCOOUpa_n9R.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/mqXazmpHOmWMz4rN_fB-Sl0Mgw8VuqB-H.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/oC8PYluHhaFV_2XK_222_full.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/omNMC94uvdb12KKx_Kc3r3ae_UulgXcms.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/pRV1wcOV7JDOyY49_183_full.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/rqwYRKyVNWGmT1Z0_bn44cLua5fvo2WuQ.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/sf8JeW_YnZaHg8cv_rZA8LTD2Rpw8MWf9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/tdnc12EMnqYzjGp9_LkutObeDWaE3rUu3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/x2zyu9QCRJXHoWgI_fYOl54uvtLG_ojhS.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/yaAJrlwDsJEqMDbn_PmZ-Lo0nQdBbqgwK.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/assets/yl_vTfuk7_vyqlMv_transcoded-lpE-cNgMus0temS7-Мультимедиа1.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/goodbye.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/lib/fonts/41xiZf7j0KADIzHO-carlito.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/lib/fonts/Lato-Black.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/lib/fonts/Lato-Bold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/lib/fonts/Lato-Italic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/lib/fonts/Lato-Light.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/lib/fonts/Lato-Regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/lib/fonts/icomoon.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/lib/fonts/icomoon.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/lib/icomoon.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/lib/lzwcompress.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/lib/main.bundle.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/lib/main.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/introduction/content/lib/player-0.0.11.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/olympics/olympics.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/olympics/Olympics.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/publicationsAndStudentsWorks/publications.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/publicationsAndStudentsWorks/Publications.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/publicationsAndStudentsWorks/studentsWorks.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/publicationsAndStudentsWorks/StudentsWorks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/science/Devs.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/infoForStudents/Devs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/science/ScienceLectures.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/infoForStudents/ScienceLectures.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/infoGrants/Grant.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/grants/Grant.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/infoGrants/InfoGrant.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/grants/InfoGrant.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/publicationsAndStudentsWorks/Publications.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/publicationsAndStudentsWorks/Publications.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/teachers/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/teachers/Card.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/teachers/Tutors.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/teachers/Tutors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/сonferencesAndStateGrants/conferences.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/сonferencesAndStateGrants/stateGrants.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/conferencesAndStateGrants.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/conferences.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/graduate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/сonferences/Conferences.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/сonferences/Conferences.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/grants.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/grants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/infoForEntrants.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/infoForEntrants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/infoForStudents.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/infoForStudents.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/olympic.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/olympic.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/publicationsAndStudentsWorks.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/publicationsAndStudentsWorks.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/index.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/teachers.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/teachers.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -268,7 +153,21 @@
       <option name="project" value="LOCAL" />
       <updated>1625415905767</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="release ver">
+      <created>1626099835115</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1626099835115</updated>
+    </task>
+    <task id="LOCAL-00010" summary="release ver (some other push)">
+      <created>1626099887220</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1626099887220</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,6 +194,8 @@
     <MESSAGE value="fixed styles in index, students, teachers pages" />
     <MESSAGE value="fixed footer style" />
     <MESSAGE value="Fixed tables on &quot;Абитуриентам&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed tables on &quot;Абитуриентам&quot;" />
+    <MESSAGE value="release ver" />
+    <MESSAGE value="release ver (some other push)" />
+    <option name="LAST_COMMIT_MESSAGE" value="release ver (some other push)" />
   </component>
 </project>

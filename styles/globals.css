@@ -26,7 +26,6 @@ html, body {
     z-index: -1;
     height: 100%;
     width: 100%;
-    background-color: white;
 }
 
 .linearTransitionUp {
@@ -37,6 +36,7 @@ html, body {
 .linearTransition {
     height: 20vh;
     background: #308DE4 linear-gradient(0deg, rgba(48, 141, 228, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    margin-top: 5vh;
 }
 
 .footer {
@@ -45,4 +45,9 @@ html, body {
 
 .w-80 {
     width: 80%;
+}
+
+.text-black-80 {
+    opacity: 0.8;
+    color: black;
 }

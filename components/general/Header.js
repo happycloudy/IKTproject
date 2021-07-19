@@ -50,7 +50,7 @@ export default function Header() {
                         >
                             <Link href="/grants" passHref>
                                 <NavDropdown.Item style={{color: "#308DE4"}}>
-                                    О грантах
+                                    Гранты
                                 </NavDropdown.Item>
                             </Link>
 
@@ -70,7 +70,6 @@ export default function Header() {
                             <Link href="/publicationsAndStudentsWorks" passHref>
                                 <NavDropdown.Item style={{color: "#308DE4"}}>
                                     Публикации
-                                    и<br/>студенческие работы
                                 </NavDropdown.Item>
                             </Link>
                         </NavDropdown>
