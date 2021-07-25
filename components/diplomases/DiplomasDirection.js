@@ -11,7 +11,6 @@ const DiplomasDirection = (props) => {
 
                         const diplomas = props.diplomas.filter(diploma => {
                             if (diploma.Year) {
-                                console.log(diploma.Year.Year, props.year)
                                 if ((diploma.direction !== direction.Direction) && (diploma.Year.Year === props.year))
                                     return 1
                             }
@@ -21,12 +20,12 @@ const DiplomasDirection = (props) => {
                             <Accordion key={direction.id}>
                                 <Card>
                                     <Card.Header>
-                                        <Accordion.Toggle as={Button} variant="link" eventKey="0">
+                                        <Accordion.Toggle as={Button} variant="link" eventKey="0" style={{backgroundColor: 'white', color: '#000066'}}>
                                             {direction.Direction}
                                         </Accordion.Toggle>
                                     </Card.Header>
-                                    <Accordion.Collapse style={{color: 'black'}} eventKey="0">
-                                        <Card.Body>
+                                    <Accordion.Collapse eventKey="0">
+                                        <Card.Body className='text-black-80'>
                                             <Diplomas diplomas={diplomas}/>
                                         </Card.Body>
                                     </Accordion.Collapse>

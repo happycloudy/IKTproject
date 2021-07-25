@@ -4,8 +4,8 @@ import Grant from "./Grant";
 
 const GrantsAccordion = (props) => {
     return (
-        <Accordion style={{backgroundColor: 'white'}}>
-            <Card style={{backgroundColor: 'white'}}>
+        <Accordion>
+            <Card>
                 <Card.Header >
                     <Accordion.Toggle as={Button} variant="link" eventKey="0" style={{backgroundColor: 'white', color: '#000066'}}>
                         {props.year}

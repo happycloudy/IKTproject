@@ -25,12 +25,12 @@ export default function Olympics(props) {
                             <Accordion>
                                 <Card>
                                     <Card.Header>
-                                        <Accordion.Toggle as={Button} variant="link" eventKey="0">
+                                        <Accordion.Toggle as={Button} variant="link" eventKey="0" style={{backgroundColor: 'white', color: '#000066'}}>
                                             {olympic.Year}
                                         </Accordion.Toggle>
                                     </Card.Header>
                                     <Accordion.Collapse eventKey="0">
-                                        <Card.Body className='text-black-50'>
+                                        <Card.Body className='text-black-80'>
                                             {olympic.Description} <br/>
                                             <Button className='mt-3' href={'http://localhost:1337' + olympic.File.url}>
                                                 Скачать пример

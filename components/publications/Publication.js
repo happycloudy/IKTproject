@@ -18,7 +18,7 @@ const Publication = (props) => {
             />
             <Card style={{width: '15rem'}}>
                 <Card.Body>
-                    <Card.Text className='text-black-50'>
+                    <Card.Text className='text-black-80'>
                         {props.title}
                     </Card.Text>
                     <Card.Link href="#" onClick={handleShow}>Подробнее</Card.Link>

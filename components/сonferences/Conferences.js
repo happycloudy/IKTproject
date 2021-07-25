@@ -39,12 +39,12 @@ export default  function Conferences() {
                             <Accordion>
                                 <Card>
                                     <Card.Header>
-                                        <Accordion.Toggle as={Button} variant="link" eventKey="0">
+                                        <Accordion.Toggle as={Button} variant="link" eventKey="0" style={{backgroundColor: 'white', color: '#000066'}}>
                                             {year}
                                         </Accordion.Toggle>
                                     </Card.Header>
                                     <Accordion.Collapse eventKey="0">
-                                        <Card.Body className='text-black-50'>
+                                        <Card.Body className='text-black-80'>
                                             {
                                                 conferences.map(conference => {
                                                     if(conference.Year === year)

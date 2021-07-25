@@ -67,7 +67,7 @@ export default function Header() {
                                 </NavDropdown.Item>
                             </Link>
 
-                            <Link href="/publicationsAndStudentsWorks" passHref>
+                            <Link href="/publications" passHref>
                                 <NavDropdown.Item style={{color: "#308DE4"}}>
                                     Публикации
                                 </NavDropdown.Item>

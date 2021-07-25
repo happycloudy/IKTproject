@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d4e1b011-95a9-4583-84af-5982b1b3cec9" name="Default Changelist" comment="release ver (some other push)">
-      <change afterPath="$PROJECT_DIR$/components/grants/GrantsAccordion.js" afterDir="false" />
+    <list default="true" id="d4e1b011-95a9-4583-84af-5982b1b3cec9" name="Default Changelist" comment="color theme changes and others">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/diplomases/Diplomas.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/diplomases/Diplomas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/diplomases/DiplomasDirection.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/diplomases/DiplomasDirection.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/general/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/general/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/infoGrants/Grant.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/grants/Grant.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/infoGrants/InfoGrant.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/grants/InfoGrant.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/publicationsAndStudentsWorks/Publications.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/publicationsAndStudentsWorks/Publications.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/teachers/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/teachers/Card.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/teachers/Tutors.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/teachers/Tutors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/grants/GrantsAccordion.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/grants/GrantsAccordion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/olympics/Olympics.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/olympics/Olympics.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/publicationsAndStudentsWorks/Publication.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/publications/Publication.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/publicationsAndStudentsWorks/PublicationAndStudentsWorksModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/publications/PublicationAndStudentsWorksModal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/publicationsAndStudentsWorks/Publications.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/publications/Publications.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/publicationsAndStudentsWorks/StudentsWork.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/publications/StudentsWork.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/publicationsAndStudentsWorks/StudentsWorks.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/publications/StudentsWorks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/сonferences/Conference.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/сonferences/Conference.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/сonferences/Conferences.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/сonferences/Conferences.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/grants.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/grants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/publicationsAndStudentsWorks.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/publicationsAndStudentsWorks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/publicationsAndStudentsWorks.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/publications.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626099887220</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="color theme changes and others">
+      <created>1626700342294</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1626700342294</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,6 +205,7 @@
     <MESSAGE value="Fixed tables on &quot;Абитуриентам&quot;" />
     <MESSAGE value="release ver" />
     <MESSAGE value="release ver (some other push)" />
-    <option name="LAST_COMMIT_MESSAGE" value="release ver (some other push)" />
+    <MESSAGE value="color theme changes and others" />
+    <option name="LAST_COMMIT_MESSAGE" value="color theme changes and others" />
   </component>
 </project>

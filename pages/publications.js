@@ -2,8 +2,8 @@ import Header from '../components/general/Header'
 import Footer from '../components/general/Footer'
 import Head from 'next/head'
 import Particles from "react-particles-js";
-import Publications from "../components/publicationsAndStudentsWorks/Publications";
-import StudentsWorks from "../components/publicationsAndStudentsWorks/StudentsWorks";
+import Publications from "../components/publications/Publications";
+import StudentsWorks from "../components/publications/StudentsWorks";
 import particleStyle from '../components/index/ParticleStyle'
 
 

@@ -44,12 +44,12 @@ export default function Publications(props) {
                                 <Accordion className='text-black-50'>
                                     <Card>
                                         <Card.Header>
-                                            <Accordion.Toggle as={Button} variant="link" eventKey="0">
+                                            <Accordion.Toggle as={Button} variant="link" eventKey="0" style={{backgroundColor: 'white', color: '#000066'}}>
                                                 {year}
                                             </Accordion.Toggle>
                                         </Card.Header>
                                         <Accordion.Collapse eventKey="0">
-                                            <Card.Body>
+                                            <Card.Body className='text-black-80'>
                                                 {publications.map(publication => {
                                                     if(publication.Year === year){
                                                         return <>
